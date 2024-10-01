@@ -1,0 +1,4336 @@
+/* Importation de la police Source Sans Pro depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+/* Réinitialisation des marges, des rembourrages et des bordures pour tous les éléments */
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+    margin: 0; /* Supprime la marge */
+    padding: 0; /* Supprime le rembourrage */
+    border: 0; /* Supprime la bordure */
+    font-size: 100%; /* Définit la taille de police par défaut */
+    font: inherit; /* Hérite des propriétés de police */
+    vertical-align: baseline; /* Aligne le texte à la ligne de base */
+}
+
+/* Définit les éléments de bloc */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block; /* Les rend tous des éléments de bloc */
+}
+
+body {
+    line-height: 1; /* Définit la hauteur de ligne pour le corps */
+}
+
+/* Suppression des styles de liste */
+ol, ul {
+    list-style: none; /* Supprime les puces des listes */
+}
+
+/* Suppression des guillemets pour les citations */
+blockquote, q {
+    quotes: none; /* Supprime les guillemets par défaut */
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ''; /* Évite l'ajout de contenu par défaut */
+}
+
+/* Suppression des espaces entre les cellules de tableau */
+table {
+    border-collapse: collapse; /* Supprime l'espace entre les bordures */
+    border-spacing: 0; /* Supprime l'espacement entre les cellules */
+}
+
+body {
+    -webkit-text-size-adjust: none; /* Empêche l'ajustement de taille de texte sur mobile */
+}
+
+mark {
+    background-color: transparent; /* Rend l'arrière-plan transparent pour les éléments marqués */
+    color: inherit; /* Hérite de la couleur du texte */
+}
+
+/* Styles pour les éléments de formulaire */
+input::-moz-focus-inner {
+    border: 0; /* Supprime la bordure des champs de saisie dans Firefox */
+    padding: 0; /* Supprime le rembourrage */
+}
+
+input, select, textarea {
+    -moz-appearance: none; /* Supprime le style par défaut sur Firefox */
+    -webkit-appearance: none; /* Supprime le style par défaut sur Safari */
+    -ms-appearance: none; /* Supprime le style par défaut sur IE */
+    appearance: none; /* Supprime le style par défaut sur tous les navigateurs */
+}
+
+/* Styles généraux */
+* {
+    list-style-type: none; /* Supprime les puces de tous les éléments */
+}
+
+/* Styles pour l'image dans l'en-tête */
+.imggeheader {
+    display: flex; /* Utilise le modèle Flexbox */
+    justify-content: space-between; /* Espace entre les éléments */
+}
+
+.imggeheader img {
+    width: 100px; /* Largeur de l'image */
+    height: 70px; /* Hauteur de l'image */
+    margin: 30px; /* Marge autour de l'image */
+    border-radius: 50%; /* Arrondi des coins de l'image */
+}
+
+/* Marges pour un élément spécifique */
+.arivertdchi {
+    margin-top: 300px; /* Marge en haut */
+}
+
+/* Styles de navigation */
+nav {
+    display: flex; /* Utilise le modèle Flexbox pour la navigation */
+    justify-content: center; /* Centre les éléments de navigation */
+    text-decoration: none; /* Supprime la décoration de texte */
+    position: relative; /* Position relative pour le placement */
+    top: 80px; /* Déplacement vers le bas */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces */
+    display: flex; /* Utilise le modèle Flexbox pour la liste */
+    font-size: 25px; /* Taille de police des éléments de la liste */
+    gap: 100px; /* Espacement entre les éléments */
+    text-decoration: none; /* Supprime la décoration de texte */
+}
+
+nav ul li {
+    background-color: #333856; /* Couleur de fond des éléments de la liste */
+    padding: 25px; /* Rembourrage autour du texte */
+    width: 200px; /* Largeur des éléments */
+    text-align: center; /* Centre le texte */
+    border-radius: 50%; /* Arrondi des coins */
+    text-decoration: none; /* Supprime la décoration de texte */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime la décoration de texte des liens */
+}
+
+/* Styles pour la boîte de calcul de la taille */
+html {
+    box-sizing: border-box; /* Définit le modèle de boîte pour tous les éléments */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Hérite du modèle de boîte */
+}
+
+/* Couleur de fond pour le corps */
+body {
+    background: #242943; /* Couleur de fond du corps */
+}
+
+/* Sélecteurs de type pour le style du texte */
+body, input, select, textarea {
+    color: #ffffff; /* Couleur du texte */
+    font-family: "Source Sans Pro", Helvetica, sans-serif; /* Police du texte */
+    font-size: 17pt; /* Taille de la police */
+    font-weight: 300; /* Épaisseur de la police */
+    letter-spacing: 0.025em; /* Espacement des lettres */
+    line-height: 1.65; /* Hauteur de ligne */
+}
+
+/* Styles responsives pour différentes tailles d'écran */
+@media screen and (max-width: 1680px) {
+    body, input, select, textarea {
+        font-size: 14pt; /* Réduit la taille de la police */
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body, input, select, textarea {
+        font-size: 12pt; /* Réduit encore la taille de la police */
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body, input, select, textarea {
+        font-size: 11pt; /* Taille de police minimale pour petits écrans */
+    }
+}
+/* Styles pour les liens */
+a {
+    /* Définir la transition pour les changements de couleur et de bordure */
+    -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    border-bottom: dotted 1px; /* Bordure inférieure en pointillés */
+    color: inherit; /* Couleur héritée de l'élément parent */
+    text-decoration: none; /* Pas de soulignement par défaut */
+}
+
+a:hover {
+    border-bottom-color: transparent; /* Bordure inférieure transparente au survol */
+    color: #9bf1ff !important; /* Changer la couleur au survol */
+}
+
+a:active {
+    color: #53e3fb !important; /* Couleur lors du clic */
+}
+
+/* Styles pour le texte en gras */
+strong, b {
+    color: #ffffff; /* Couleur blanche */
+    font-weight: 600; /* Épaisseur de la police */
+}
+
+/* Styles pour le texte en italique */
+em, i {
+    font-style: italic; /* Italique */
+}
+
+/* Styles pour les paragraphes */
+p {
+    margin: 0 0 2em 0; /* Marge en bas de 2em */
+}
+
+/* Styles pour les titres */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Couleur blanche */
+    font-weight: 600; /* Épaisseur de la police */
+    line-height: 1.65; /* Hauteur de ligne */
+    margin: 0 0 1em 0; /* Marge en bas de 1em */
+}
+
+/* Supprimer la bordure inférieure pour les liens dans les titres */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit; /* Couleur héritée */
+    border-bottom: 0; /* Pas de bordure */
+}
+
+/* Tailles de police pour les titres */
+h1 {
+    font-size: 2.5em; /* Taille de police pour h1 */
+}
+
+h2 {
+    font-size: 1.75em; /* Taille de police pour h2 */
+}
+
+h3 {
+    font-size: 1.35em; /* Taille de police pour h3 */
+}
+
+h4 {
+    font-size: 1.1em; /* Taille de police pour h4 */
+}
+
+h5 {
+    font-size: 0.9em; /* Taille de police pour h5 */
+}
+
+h6 {
+    font-size: 0.7em; /* Taille de police pour h6 */
+}
+
+/* Styles pour les écrans de moins de 736px */
+@media screen and (max-width: 736px) {
+    h1 {
+        font-size: 2em; /* Réduire la taille de h1 */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Réduire la taille de h2 */
+    }
+
+    h3 {
+        font-size: 1.25em; /* Réduire la taille de h3 */
+    }
+}
+
+/* Styles pour les éléments de sous-script */
+sub {
+    font-size: 0.8em; /* Taille de police pour le sous-script */
+    position: relative; /* Position relative pour le décalage */
+    top: 0.5em; /* Décalage vers le bas */
+}
+
+/* Styles pour les éléments de super-script */
+sup {
+    font-size: 0.8em; /* Taille de police pour le super-script */
+    position: relative; /* Position relative pour le décalage */
+    top: -0.5em; /* Décalage vers le haut */
+}
+
+/* Styles pour les citations */
+blockquote {
+    border-left: solid 4px rgba(212, 212, 255, 0.1); /* Bordure à gauche */
+    font-style: italic; /* Italique */
+    margin: 0 0 2em 0; /* Marge en bas de 2em */
+    padding: 0.5em 0 0.5em 2em; /* Rembourrage interne */
+}
+
+/* Styles pour le code inline */
+code {
+    background: rgba(212, 212, 255, 0.035); /* Fond léger */
+    font-family: "Courier New", monospace; /* Police monospace */
+    font-size: 0.9em; /* Taille de police */
+    margin: 0 0.25em; /* Marge */
+    padding: 0.25em 0.65em; /* Rembourrage */
+}
+
+/* Styles pour le bloc de code */
+pre {
+    -webkit-overflow-scrolling: touch; /* Scrolling fluide sur mobile */
+    font-family: "Courier New", monospace; /* Police monospace */
+    font-size: 0.9em; /* Taille de police */
+    margin: 0 0 2em 0; /* Marge en bas de 2em */
+}
+
+pre code {
+    display: block; /* Affichage en bloc */
+    line-height: 1.75; /* Hauteur de ligne */
+    padding: 1em 1.5em; /* Rembourrage interne */
+    overflow-x: auto; /* Défilement horizontal si nécessaire */
+}
+
+/* Styles pour les lignes horizontales */
+hr {
+    border: 0; /* Pas de bordure par défaut */
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1); /* Bordure en bas */
+    margin: 2em 0; /* Marge en haut et en bas de 2em */
+}
+/* Marges pour les éléments de séparation majeurs */
+hr.major {
+    margin: 3em 0; /* Ajoute une marge de 3em en haut et en bas */
+}
+
+/* Alignement du texte */
+.align-left {
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.align-center {
+    text-align: center; /* Aligne le texte au centre */
+}
+
+.align-right {
+    text-align: right; /* Aligne le texte à droite */
+}
+
+/* Styles pour les lignes (rows) */
+.row {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-wrap: wrap; /* Permet aux éléments de s'enrouler sur plusieurs lignes */
+    box-sizing: border-box; /* Inclut le padding et les bordures dans les calculs de largeur */
+    align-items: stretch; /* Étire les éléments pour qu'ils aient tous la même hauteur */
+}
+
+.row > * {
+    box-sizing: border-box; /* Applique le modèle de boîte flexible à tous les enfants */
+}
+
+/* Évite le margin-bottom pour le dernier enfant d'une ligne avec gtr-uniform */
+.row.gtr-uniform > * > :last-child {
+    margin-bottom: 0; /* Pas de marge en bas pour le dernier élément */
+}
+
+/* Alignement des éléments à l'intérieur de la ligne */
+.row.aln-left {
+    justify-content: flex-start; /* Aligne les éléments au début de la ligne */
+}
+
+.row.aln-center {
+    justify-content: center; /* Centre les éléments dans la ligne */
+}
+
+.row.aln-right {
+    justify-content: flex-end; /* Aligne les éléments à la fin de la ligne */
+}
+
+.row.aln-top {
+    align-items: flex-start; /* Aligne les éléments en haut de la ligne */
+}
+
+.row.aln-middle {
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.row.aln-bottom {
+    align-items: flex-end; /* Aligne les éléments en bas de la ligne */
+}
+
+/* Définit l'ordre d'affichage des éléments */
+.row > .imp {
+    order: -1; /* L'élément avec la classe 'imp' sera affiché en premier */
+}
+
+/* Définitions des colonnes avec des largeurs spécifiques */
+.row > .col-1 {
+    width: 8.33333%; /* Colonne qui occupe 8.33% de la largeur */
+}
+
+.row > .off-1 {
+    margin-left: 8.33333%; /* Marge à gauche de 8.33% */
+}
+
+.row > .col-2 {
+    width: 16.66667%; /* Colonne qui occupe 16.67% de la largeur */
+}
+
+.row > .off-2 {
+    margin-left: 16.66667%; /* Marge à gauche de 16.67% */
+}
+
+.row > .col-3 {
+    width: 25%; /* Colonne qui occupe 25% de la largeur */
+}
+
+.row > .off-3 {
+    margin-left: 25%; /* Marge à gauche de 25% */
+}
+
+.row > .col-4 {
+    width: 33.33333%; /* Colonne qui occupe 33.33% de la largeur */
+}
+
+.row > .off-4 {
+    margin-left: 33.33333%; /* Marge à gauche de 33.33% */
+}
+
+.row > .col-5 {
+    width: 41.66667%; /* Colonne qui occupe 41.67% de la largeur */
+}
+
+.row > .off-5 {
+    margin-left: 41.66667%; /* Marge à gauche de 41.67% */
+}
+
+.row > .col-6 {
+    width: 50%; /* Colonne qui occupe 50% de la largeur */
+}
+
+.row > .off-6 {
+    margin-left: 50%; /* Marge à gauche de 50% */
+}
+
+.row > .col-7 {
+    width: 58.33333%; /* Colonne qui occupe 58.33% de la largeur */
+}
+
+.row > .off-7 {
+    margin-left: 58.33333%; /* Marge à gauche de 58.33% */
+}
+
+.row > .col-8 {
+    width: 66.66667%; /* Colonne qui occupe 66.67% de la largeur */
+}
+
+.row > .off-8 {
+    margin-left: 66.66667%; /* Marge à gauche de 66.67% */
+}
+
+.row > .col-9 {
+    width: 75%; /* Colonne qui occupe 75% de la largeur */
+}
+
+.row > .off-9 {
+    margin-left: 75%; /* Marge à gauche de 75% */
+}
+
+.row > .col-10 {
+    width: 83.33333%; /* Colonne qui occupe 83.33% de la largeur */
+}
+/* Marges et largeurs des colonnes */
+.row > .off-10 {
+    margin-left: 83.33333%; /* Décalage à gauche de 83.33% pour la classe 'off-10' */
+}
+
+.row > .col-11 {
+    width: 91.66667%; /* Largeur de 91.67% pour la classe 'col-11' */
+}
+
+.row > .off-11 {
+    margin-left: 91.66667%; /* Décalage à gauche de 91.67% pour la classe 'off-11' */
+}
+
+.row > .col-12 {
+    width: 100%; /* Largeur de 100% pour la classe 'col-12' */
+}
+
+.row > .off-12 {
+    margin-left: 100%; /* Décalage à gauche de 100% pour la classe 'off-12' */
+}
+
+/* Gestion des marges et des paddings pour des rangées sans espace */
+.row.gtr-0 {
+    margin-top: 0; /* Pas de marge en haut */
+    margin-left: 0em; /* Pas de marge à gauche */
+}
+
+.row.gtr-0 > * {
+    padding: 0 0 0 0em; /* Pas de padding pour les enfants */
+}
+
+.row.gtr-0.gtr-uniform {
+    margin-top: 0em; /* Pas de marge supplémentaire en haut */
+}
+
+.row.gtr-0.gtr-uniform > * {
+    padding-top: 0em; /* Pas de padding en haut pour les enfants */
+}
+
+/* Gestion des marges et des paddings pour des rangées avec un léger espace */
+.row.gtr-25 {
+    margin-top: 0; /* Pas de marge en haut */
+    margin-left: -0.5em; /* Décalage à gauche de -0.5em */
+}
+
+.row.gtr-25 > * {
+    padding: 0 0 0 0.5em; /* Padding de 0.5em à gauche pour les enfants */
+}
+
+.row.gtr-25.gtr-uniform {
+    margin-top: -0.5em; /* Décalage négatif en haut */
+}
+
+.row.gtr-25.gtr-uniform > * {
+    padding-top: 0.5em; /* Padding de 0.5em en haut pour les enfants */
+}
+
+/* Gestion des marges et des paddings pour des rangées avec un espace modéré */
+.row.gtr-50 {
+    margin-top: 0; /* Pas de marge en haut */
+    margin-left: -1em; /* Décalage à gauche de -1em */
+}
+
+.row.gtr-50 > * {
+    padding: 0 0 0 1em; /* Padding de 1em à gauche pour les enfants */
+}
+
+.row.gtr-50.gtr-uniform {
+    margin-top: -1em; /* Décalage négatif en haut */
+}
+
+.row.gtr-50.gtr-uniform > * {
+    padding-top: 1em; /* Padding de 1em en haut pour les enfants */
+}
+
+/* Gestion des marges et des paddings pour des rangées avec un espace large */
+.row {
+    margin-top: 0; /* Pas de marge en haut */
+    margin-left: -2em; /* Décalage à gauche de -2em */
+}
+
+.row > * {
+    padding: 0 0 0 2em; /* Padding de 2em à gauche pour les enfants */
+}
+
+.row.gtr-uniform {
+    margin-top: -2em; /* Décalage négatif en haut */
+}
+
+.row.gtr-uniform > * {
+    padding-top: 2em; /* Padding de 2em en haut pour les enfants */
+}
+
+/* Gestion des marges et des paddings pour des rangées avec un espace très large */
+.row.gtr-150 {
+    margin-top: 0; /* Pas de marge en haut */
+    margin-left: -3em; /* Décalage à gauche de -3em */
+}
+
+.row.gtr-150 > * {
+    padding: 0 0 0 3em; /* Padding de 3em à gauche pour les enfants */
+}
+
+.row.gtr-150.gtr-uniform {
+    margin-top: -3em; /* Décalage négatif en haut */
+}
+
+.row.gtr-150.gtr-uniform > * {
+    padding-top: 3em; /* Padding de 3em en haut pour les enfants */
+}
+
+.row.gtr-200 {
+    margin-top: 0; /* Pas de marge en haut */
+    margin-left: -4em; /* Décalage à gauche de -4em */
+}
+
+.row.gtr-200 > * {
+    padding: 0 0 0 4em; /* Padding de 4em à gauche pour les enfants */
+}
+
+.row.gtr-200.gtr-uniform {
+    margin-top: -4em; /* Décalage négatif en haut */
+}
+
+.row.gtr-200.gtr-uniform > * {
+    padding-top: 4em; /* Padding de 4em en haut pour les enfants */
+}
+
+/* Styles réactifs pour les écrans plus petits */
+@media screen and (max-width: 1680px) {
+    .row {
+        display: flex; /* Utilisation de flexbox pour aligner les éléments */
+        flex-wrap: wrap; /* Permet le retour à la ligne des éléments si nécessaire */
+        box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+        align-items: stretch; /* Étire les éléments enfants pour qu'ils aient tous la même hauteur */
+    }
+
+    .row > * {
+        box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale pour les enfants */
+    }
+
+    .row.gtr-uniform > * > :last-child {
+        margin-bottom: 0; /* Supprime la marge inférieure du dernier enfant */
+    }
+
+    .row.aln-left {
+        justify-content: flex-start; /* Aligne les éléments à gauche */
+    }
+
+    .row.aln-center {
+        justify-content: center; /* Centre les éléments */
+    }
+}
+/* Aligner les éléments à droite */
+.row.aln-right {
+	justify-content: flex-end;
+}
+
+/* Aligner les éléments en haut */
+.row.aln-top {
+	align-items: flex-start;
+}
+
+/* Aligner les éléments au centre verticalement */
+.row.aln-middle {
+	align-items: center;
+}
+
+/* Aligner les éléments en bas */
+.row.aln-bottom {
+	align-items: flex-end;
+}
+
+/* Faire passer un élément en premier */
+.row > .imp-xlarge {
+	order: -1;
+}
+
+/* Définir la largeur d'une colonne de 1 sur 12 pour les grands écrans */
+.row > .col-1-xlarge {
+	width: 8.33333%;
+}
+
+/* Ajouter une marge à gauche de 1 colonne sur 12 pour les grands écrans */
+.row > .off-1-xlarge {
+	margin-left: 8.33333%;
+}
+
+/* Définir la largeur d'une colonne de 2 sur 12 pour les grands écrans */
+.row > .col-2-xlarge {
+	width: 16.66667%;
+}
+
+/* Ajouter une marge à gauche de 2 colonnes sur 12 pour les grands écrans */
+.row > .off-2-xlarge {
+	margin-left: 16.66667%;
+}
+
+/* Définir la largeur d'une colonne de 3 sur 12 pour les grands écrans */
+.row > .col-3-xlarge {
+	width: 25%;
+}
+
+/* Ajouter une marge à gauche de 3 colonnes sur 12 pour les grands écrans */
+.row > .off-3-xlarge {
+	margin-left: 25%;
+}
+
+/* Définir la largeur d'une colonne de 4 sur 12 pour les grands écrans */
+.row > .col-4-xlarge {
+	width: 33.33333%;
+}
+
+/* Ajouter une marge à gauche de 4 colonnes sur 12 pour les grands écrans */
+.row > .off-4-xlarge {
+	margin-left: 33.33333%;
+}
+
+/* Définir la largeur d'une colonne de 5 sur 12 pour les grands écrans */
+.row > .col-5-xlarge {
+	width: 41.66667%;
+}
+
+/* Ajouter une marge à gauche de 5 colonnes sur 12 pour les grands écrans */
+.row > .off-5-xlarge {
+	margin-left: 41.66667%;
+}
+
+/* Définir la largeur d'une colonne de 6 sur 12 pour les grands écrans (50%) */
+.row > .col-6-xlarge {
+	width: 50%;
+}
+
+/* Ajouter une marge à gauche de 6 colonnes sur 12 pour les grands écrans */
+.row > .off-6-xlarge {
+	margin-left: 50%;
+}
+
+/* Définir la largeur d'une colonne de 7 sur 12 pour les grands écrans */
+.row > .col-7-xlarge {
+	width: 58.33333%;
+}
+
+/* Ajouter une marge à gauche de 7 colonnes sur 12 pour les grands écrans */
+.row > .off-7-xlarge {
+	margin-left: 58.33333%;
+}
+
+/* Définir la largeur d'une colonne de 8 sur 12 pour les grands écrans */
+.row > .col-8-xlarge {
+	width: 66.66667%;
+}
+
+/* Ajouter une marge à gauche de 8 colonnes sur 12 pour les grands écrans */
+.row > .off-8-xlarge {
+	margin-left: 66.66667%;
+}
+
+/* Définir la largeur d'une colonne de 9 sur 12 pour les grands écrans */
+.row > .col-9-xlarge {
+	width: 75%;
+}
+
+/* Ajouter une marge à gauche de 9 colonnes sur 12 pour les grands écrans */
+.row > .off-9-xlarge {
+	margin-left: 75%;
+}
+
+/* Définir la largeur d'une colonne de 10 sur 12 pour les grands écrans */
+.row > .col-10-xlarge {
+	width: 83.33333%;
+}
+
+/* Ajouter une marge à gauche de 10 colonnes sur 12 pour les grands écrans */
+.row > .off-10-xlarge {
+	margin-left: 83.33333%;
+}
+
+/* Définir la largeur d'une colonne de 11 sur 12 pour les grands écrans */
+.row > .col-11-xlarge {
+	width: 91.66667%;
+}
+
+/* Ajouter une marge à gauche de 11 colonnes sur 12 pour les grands écrans */
+.row > .off-11-xlarge {
+	margin-left: 91.66667%;
+}
+
+/* Définir la largeur de 12 colonnes (100%) pour les grands écrans */
+.row > .col-12-xlarge {
+	width: 100%;
+}
+
+/* Ajouter une marge à gauche de 12 colonnes sur 12 pour les grands écrans */
+.row > .off-12-xlarge {
+	margin-left: 100%;
+}
+
+/* Ajuster les marges et paddings pour une grille avec espacement de 0 */
+.row.gtr-0 {
+	margin-top: 0;
+	margin-left: 0em;
+}
+
+/* Ajuster le padding des colonnes à 0 */
+.row.gtr-0 > * {
+	padding: 0 0 0 0em;
+}
+
+/* Ajuster les marges pour un espacement uniforme */
+.row.gtr-0.gtr-uniform {
+	margin-top: 0em;
+}
+
+/* Ajuster le padding vertical à 0 */
+.row.gtr-0.gtr-uniform > * {
+	padding-top: 0em;
+}
+
+/* Ajuster les marges et paddings pour une grille avec espacement de 0.5em */
+.row.gtr-25 {
+	margin-top: 0;
+	margin-left: -0.5em;
+}
+
+/* Ajouter un padding de 0.5em entre les colonnes */
+.row.gtr-25 > * {
+	padding: 0 0 0 0.5em;
+}
+
+/* Ajuster les marges pour un espacement uniforme de 0.5em */
+.row.gtr-25.gtr-uniform {
+	margin-top: -0.5em;
+}
+
+/* Ajouter un padding vertical de 0.5em */
+.row.gtr-25.gtr-uniform > * {
+	padding-top: 0.5em;
+}
+
+/* Ajuster les marges et paddings pour une grille avec espacement de 1em */
+.row.gtr-50 {
+	margin-top: 0;
+	margin-left: -1em;
+}
+
+/* Ajouter un padding de 1em entre les colonnes */
+.row.gtr-50 > * {
+	padding: 0 0 0 1em;
+}
+
+/* Ajuster les marges pour un espacement uniforme de 1em */
+.row.gtr-50.gtr-uniform {
+	margin-top: -1em;
+}
+
+/* Ajouter un padding vertical de 1em */
+.row.gtr-50.gtr-uniform > * {
+	padding-top: 1em;
+}
+
+/* Ajuster les marges et paddings pour une grille avec espacement de 2em */
+.row {
+	margin-top: 0;
+	margin-left: -2em;
+}
+
+/* Ajouter un padding de 2em entre les colonnes */
+.row > * {
+	padding: 0 0 0 2em;
+}
+
+/* Ajuster les marges pour un espacement uniforme de 2em */
+.row.gtr-uniform {
+	margin-top: -2em;
+}
+
+/* Ajouter un padding vertical de 2em */
+.row.gtr-uniform > * {
+	padding-top: 2em;
+}
+
+/* Ajuster les marges et paddings pour une grille avec espacement de 3em */
+.row.gtr-150 {
+	margin-top: 0;
+	margin-left: -3em;
+}
+
+/* Ajouter un padding de 3em entre les colonnes */
+.row.gtr-150 > * {
+	padding: 0 0 0 3em;
+}
+/* Marges et padding pour la classe row avec des grilles gtr-150 et gtr-uniform */
+.row.gtr-150.gtr-uniform {
+    margin-top: -3em; /* Marge négative de 3em en haut */
+}
+
+.row.gtr-150.gtr-uniform > * {
+    padding-top: 3em; /* Padding de 3em en haut des éléments enfants */
+}
+
+/* Marges et padding pour la classe row avec des grilles gtr-200 */
+.row.gtr-200 {
+    margin-top: 0; /* Réinitialisation de la marge supérieure à 0 */
+    margin-left: -4em; /* Marge négative de 4em à gauche */
+}
+
+.row.gtr-200 > * {
+    padding: 0 0 0 4em; /* Padding uniquement à gauche de 4em */
+}
+
+.row.gtr-200.gtr-uniform {
+    margin-top: -4em; /* Marge négative de 4em en haut pour la grille uniforme */
+}
+
+.row.gtr-200.gtr-uniform > * {
+    padding-top: 4em; /* Padding en haut de 4em pour les éléments enfants */
+}
+
+@media screen and (max-width: 1280px) {
+
+    /* Configuration générale de la flexbox pour les rangées */
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer sur la ligne suivante */
+        box-sizing: border-box;
+        align-items: stretch; /* Étirement des éléments pour occuper tout l'espace vertical */
+    }
+
+    /* Application de box-sizing pour les éléments enfants */
+    .row > * {
+        box-sizing: border-box;
+    }
+
+    /* Suppression de la marge du dernier enfant dans une rangée uniforme */
+    .row.gtr-uniform > * > :last-child {
+        margin-bottom: 0;
+    }
+
+    /* Alignement des éléments à gauche */
+    .row.aln-left {
+        justify-content: flex-start;
+    }
+
+    /* Alignement centré des éléments */
+    .row.aln-center {
+        justify-content: center;
+    }
+
+    /* Alignement des éléments à droite */
+    .row.aln-right {
+        justify-content: flex-end;
+    }
+
+    /* Alignement des éléments en haut */
+    .row.aln-top {
+        align-items: flex-start;
+    }
+
+    /* Alignement centré verticalement */
+    .row.aln-middle {
+        align-items: center;
+    }
+
+    /* Alignement des éléments en bas */
+    .row.aln-bottom {
+        align-items: flex-end;
+    }
+
+    /* Inversion de l'ordre des éléments ayant la classe .imp-large */
+    .row > .imp-large {
+        order: -1;
+    }
+
+    /* Largeurs spécifiques des colonnes pour différentes tailles (large) */
+    .row > .col-1-large {
+        width: 8.33333%; /* Largeur de 1 colonne sur 12 */
+    }
+
+    /* Offset à gauche pour 1 colonne */
+    .row > .off-1-large {
+        margin-left: 8.33333%; /* Décalage d'une colonne */
+    }
+
+    .row > .col-2-large {
+        width: 16.66667%; /* Largeur de 2 colonnes sur 12 */
+    }
+
+    .row > .off-2-large {
+        margin-left: 16.66667%; /* Décalage de 2 colonnes */
+    }
+
+    .row > .col-3-large {
+        width: 25%; /* Largeur de 3 colonnes sur 12 */
+    }
+
+    .row > .off-3-large {
+        margin-left: 25%; /* Décalage de 3 colonnes */
+    }
+
+    .row > .col-4-large {
+        width: 33.33333%; /* Largeur de 4 colonnes sur 12 */
+    }
+
+    .row > .off-4-large {
+        margin-left: 33.33333%; /* Décalage de 4 colonnes */
+    }
+
+    .row > .col-5-large {
+        width: 41.66667%; /* Largeur de 5 colonnes sur 12 */
+    }
+
+    .row > .off-5-large {
+        margin-left: 41.66667%; /* Décalage de 5 colonnes */
+    }
+
+    .row > .col-6-large {
+        width: 50%; /* Largeur de 6 colonnes sur 12 (moitié) */
+    }
+
+    .row > .off-6-large {
+        margin-left: 50%; /* Décalage de 6 colonnes */
+    }
+
+    /* Etc. pour les autres colonnes */
+}
+/* Large breakpoint - Ajustement des colonnes et des marges pour les grands écrans */
+.row > .col-11-large {
+    width: 91.66667%; /* Colonne occupant environ 92% de la largeur */
+}
+
+.row > .off-11-large {
+    margin-left: 91.66667%; /* Décalage vers la droite de 92% */
+}
+
+.row > .col-12-large {
+    width: 100%; /* Colonne occupant toute la largeur */
+}
+
+.row > .off-12-large {
+    margin-left: 100%; /* Décalage complet à droite */
+}
+
+/* Gestion des marges et des espacements pour les différentes configurations de grilles */
+.row.gtr-0 {
+    margin-top: 0;
+    margin-left: 0em; /* Aucun espace entre les colonnes */
+}
+
+.row.gtr-0 > * {
+    padding: 0 0 0 0em; /* Pas de padding */
+}
+
+.row.gtr-0.gtr-uniform {
+    margin-top: 0em;
+}
+
+.row.gtr-0.gtr-uniform > * {
+    padding-top: 0em;
+}
+
+/* Grille avec un espacement de 0.375em entre les colonnes */
+.row.gtr-25 {
+    margin-top: 0;
+    margin-left: -0.375em;
+}
+
+.row.gtr-25 > * {
+    padding: 0 0 0 0.375em;
+}
+
+.row.gtr-25.gtr-uniform {
+    margin-top: -0.375em;
+}
+
+.row.gtr-25.gtr-uniform > * {
+    padding-top: 0.375em;
+}
+
+/* Grille avec un espacement de 0.75em */
+.row.gtr-50 {
+    margin-top: 0;
+    margin-left: -0.75em;
+}
+
+.row.gtr-50 > * {
+    padding: 0 0 0 0.75em;
+}
+
+.row.gtr-50.gtr-uniform {
+    margin-top: -0.75em;
+}
+
+.row.gtr-50.gtr-uniform > * {
+    padding-top: 0.75em;
+}
+
+/* Grille standard avec un espacement de 1.5em */
+.row {
+    margin-top: 0;
+    margin-left: -1.5em;
+}
+
+.row > * {
+    padding: 0 0 0 1.5em; /* Espacement standard entre les colonnes */
+}
+
+.row.gtr-uniform {
+    margin-top: -1.5em;
+}
+
+.row.gtr-uniform > * {
+    padding-top: 1.5em;
+}
+
+/* Grille avec un espacement de 2.25em */
+.row.gtr-150 {
+    margin-top: 0;
+    margin-left: -2.25em;
+}
+
+.row.gtr-150 > * {
+    padding: 0 0 0 2.25em;
+}
+
+.row.gtr-150.gtr-uniform {
+    margin-top: -2.25em;
+}
+
+.row.gtr-150.gtr-uniform > * {
+    padding-top: 2.25em;
+}
+
+/* Grille avec un espacement de 3em */
+.row.gtr-200 {
+    margin-top: 0;
+    margin-left: -3em;
+}
+
+.row.gtr-200 > * {
+    padding: 0 0 0 3em;
+}
+
+.row.gtr-200.gtr-uniform {
+    margin-top: -3em;
+}
+
+.row.gtr-200.gtr-uniform > * {
+    padding-top: 3em;
+}
+
+/* Ajustements pour les écrans inférieurs à 980px */
+@media screen and (max-width: 980px) {
+
+    /* Flexbox pour la grille et alignement */
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Permet à la grille de s'adapter aux petites résolutions */
+        box-sizing: border-box;
+        align-items: stretch; /* Alignement vertical des éléments */
+    }
+
+    .row > * {
+        box-sizing: border-box;
+    }
+
+    .row.gtr-uniform > * > :last-child {
+        margin-bottom: 0;
+    }
+
+    /* Alignement horizontal des colonnes */
+    .row.aln-left {
+        justify-content: flex-start; /* Alignement à gauche */
+    }
+
+    .row.aln-center {
+        justify-content: center; /* Alignement centré */
+    }
+
+    .row.aln-right {
+        justify-content: flex-end; /* Alignement à droite */
+    }
+
+    /* Alignement vertical des colonnes */
+    .row.aln-top {
+        align-items: flex-start; /* Alignement en haut */
+    }
+
+    .row.aln-middle {
+        align-items: center; /* Alignement au centre */
+    }
+
+    .row.aln-bottom {
+        align-items: flex-end; /* Alignement en bas */
+    }
+
+    /* Ajustements spécifiques pour les colonnes de taille moyenne */
+    .row > .imp-medium {
+        order: -1; /* Permet de changer l'ordre d'affichage pour certaines colonnes */
+    }
+
+    .row > .col-1-medium {
+        width: 8.33333%; /* Largeur de 8.33% pour la colonne */
+    }
+
+    .row > .off-1-medium {
+        margin-left: 8.33333%; /* Décalage de 8.33% à gauche */
+    }
+
+    /* Autres colonnes avec leurs largeurs respectives */
+    .row > .col-2-medium {
+        width: 16.66667%;
+    }
+
+    .row > .off-2-medium {
+        margin-left: 16.66667%;
+    }
+
+    .row > .col-3-medium {
+        width: 25%;
+    }
+
+    .row > .off-3-medium {
+        margin-left: 25%;
+    }
+
+    .row > .col-4-medium {
+        width: 33.33333%;
+    }
+
+    .row > .off-4-medium {
+        margin-left: 33.33333%;
+    }
+
+    .row > .col-5-medium {
+        width: 41.66667%;
+    }
+
+    .row > .off-5-medium {
+        margin-left: 41.66667%;
+    }
+
+    .row > .col-6-medium {
+        width: 50%;
+    }
+
+    .row > .off-6-medium {
+        margin-left: 50%;
+    }
+
+    .row > .col-7-medium {
+        width: 58.33333%;
+    }
+
+    .row > .off-7-medium {
+        margin-left: 58.33333%;
+    }
+}
+/* Largeur de la colonne de 8 pour les écrans de taille moyenne */
+.row > .col-8-medium {
+	width: 66.66667%;
+}
+
+/* Décalage à gauche de 8 colonnes pour les écrans de taille moyenne */
+.row > .off-8-medium {
+	margin-left: 66.66667%;
+}
+
+/* Largeur de la colonne de 9 pour les écrans de taille moyenne */
+.row > .col-9-medium {
+	width: 75%;
+}
+
+/* Décalage à gauche de 9 colonnes pour les écrans de taille moyenne */
+.row > .off-9-medium {
+	margin-left: 75%;
+}
+
+/* Largeur de la colonne de 10 pour les écrans de taille moyenne */
+.row > .col-10-medium {
+	width: 83.33333%;
+}
+
+/* Décalage à gauche de 10 colonnes pour les écrans de taille moyenne */
+.row > .off-10-medium {
+	margin-left: 83.33333%;
+}
+
+/* Largeur de la colonne de 11 pour les écrans de taille moyenne */
+.row > .col-11-medium {
+	width: 91.66667%;
+}
+
+/* Décalage à gauche de 11 colonnes pour les écrans de taille moyenne */
+.row > .off-11-medium {
+	margin-left: 91.66667%;
+}
+
+/* Largeur de la colonne de 12 pour les écrans de taille moyenne (pleine largeur) */
+.row > .col-12-medium {
+	width: 100%;
+}
+
+/* Décalage à gauche de 12 colonnes pour les écrans de taille moyenne (pleine largeur) */
+.row > .off-12-medium {
+	margin-left: 100%;
+}
+
+/* Suppression des marges pour la classe gtr-0 */
+.row.gtr-0 {
+	margin-top: 0;
+	margin-left: 0em;
+}
+
+/* Suppression du padding pour les enfants de la classe gtr-0 */
+.row.gtr-0 > * {
+	padding: 0 0 0 0em;
+}
+
+/* Suppression de la marge pour la classe gtr-0 et gtr-uniform */
+.row.gtr-0.gtr-uniform {
+	margin-top: 0em;
+}
+
+/* Suppression du padding supérieur pour les enfants de la classe gtr-0 et gtr-uniform */
+.row.gtr-0.gtr-uniform > * {
+	padding-top: 0em;
+}
+
+/* Marges négatives pour la classe gtr-25 */
+.row.gtr-25 {
+	margin-top: 0;
+	margin-left: -0.375em;
+}
+
+/* Padding pour les enfants de la classe gtr-25 */
+.row.gtr-25 > * {
+	padding: 0 0 0 0.375em;
+}
+
+/* Marges uniformes négatives pour la classe gtr-25 et gtr-uniform */
+.row.gtr-25.gtr-uniform {
+	margin-top: -0.375em;
+}
+
+/* Padding supérieur uniforme pour les enfants de la classe gtr-25 et gtr-uniform */
+.row.gtr-25.gtr-uniform > * {
+	padding-top: 0.375em;
+}
+
+/* Marges négatives pour la classe gtr-50 */
+.row.gtr-50 {
+	margin-top: 0;
+	margin-left: -0.75em;
+}
+
+/* Padding pour les enfants de la classe gtr-50 */
+.row.gtr-50 > * {
+	padding: 0 0 0 0.75em;
+}
+
+/* Marges uniformes négatives pour la classe gtr-50 et gtr-uniform */
+.row.gtr-50.gtr-uniform {
+	margin-top: -0.75em;
+}
+
+/* Padding supérieur uniforme pour les enfants de la classe gtr-50 et gtr-uniform */
+.row.gtr-50.gtr-uniform > * {
+	padding-top: 0.75em;
+}
+
+/* Marges négatives pour la classe gtr-150 */
+.row.gtr-150 {
+	margin-top: 0;
+	margin-left: -2.25em;
+}
+
+/* Padding pour les enfants de la classe gtr-150 */
+.row.gtr-150 > * {
+	padding: 0 0 0 2.25em;
+}
+
+/* Marges uniformes négatives pour la classe gtr-150 et gtr-uniform */
+.row.gtr-150.gtr-uniform {
+	margin-top: -2.25em;
+}
+
+/* Padding supérieur uniforme pour les enfants de la classe gtr-150 et gtr-uniform */
+.row.gtr-150.gtr-uniform > * {
+	padding-top: 2.25em;
+}
+
+/* Marges négatives pour la classe gtr-200 */
+.row.gtr-200 {
+	margin-top: 0;
+	margin-left: -3em;
+}
+
+/* Padding pour les enfants de la classe gtr-200 */
+.row.gtr-200 > * {
+	padding: 0 0 0 3em;
+}
+
+/* Marges uniformes négatives pour la classe gtr-200 et gtr-uniform */
+.row.gtr-200.gtr-uniform {
+	margin-top: -3em;
+}
+
+/* Padding supérieur uniforme pour les enfants de la classe gtr-200 et gtr-uniform */
+.row.gtr-200.gtr-uniform > * {
+	padding-top: 3em;
+}
+
+/* Media queries pour ajuster la mise en page sur les écrans de moins de 736px */
+@media screen and (max-width: 736px) {
+
+	/* Affichage flexible et enveloppement des colonnes */
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
+
+	/* Appliquer box-sizing aux enfants des .row */
+	.row > * {
+		box-sizing: border-box;
+	}
+
+	/* Suppression de la marge en bas pour le dernier enfant d'une ligne */
+	.row.gtr-uniform > * > :last-child {
+		margin-bottom: 0;
+	}
+
+	/* Aligner les éléments à gauche */
+	.row.aln-left {
+		justify-content: flex-start;
+	}
+
+	/* Aligner les éléments au centre */
+	.row.aln-center {
+		justify-content: center;
+	}
+
+	/* Aligner les éléments à droite */
+	.row.aln-right {
+		justify-content: flex-end;
+	}
+
+	/* Aligner les éléments en haut */
+	.row.aln-top {
+		align-items: flex-start;
+	}
+
+	/* Aligner les éléments au centre verticalement */
+	.row.aln-middle {
+		align-items: center;
+	}
+
+	/* Aligner les éléments en bas */
+	.row.aln-bottom {
+		align-items: flex-end;
+	}
+
+	/* Changer l'ordre des éléments avec la classe imp-small */
+	.row > .imp-small {
+		order: -1;
+	}
+
+	/* Largeur des colonnes pour les petits écrans (col-1-small) */
+	.row > .col-1-small {
+		width: 8.33333%;
+	}
+
+	/* Décalage à gauche de 1 colonne pour les petits écrans */
+	.row > .off-1-small {
+		margin-left: 8.33333%;
+	}
+
+	/* Largeur des colonnes pour les petits écrans (col-2-small) */
+	.row > .col-2-small {
+		width: 16.66667%;
+	}
+
+	/* Décalage à gauche de 2 colonnes pour les petits écrans */
+	.row > .off-2-small {
+		margin-left: 16.66667%;
+	}
+
+	/* Largeur des colonnes pour les petits écrans (col-3-small) */
+	.row > .col-3-small {
+		width: 25%;
+	}
+
+	/* Décalage à gauche de 3 colonnes pour les petits écrans */
+	.row > .off-3-small {
+		margin-left: 25%;
+	}
+}
+	/* Largeur des colonnes pour les petits écrans (col-4-small) */
+	.row > .col-4-small {
+		width: 33.33333%;
+	}
+
+	/* Décalage à gauche de 4 colonnes pour les petits écrans */
+	.row > .off-4-small {
+		margin-left: 33.33333%;
+	}
+
+	/* Largeur des colonnes pour les petits écrans (col-5-small) */
+	.row > .col-5-small {
+		width: 41.66667%;
+	}
+/* Définition des marges pour un décalage à gauche de 41,67% */
+.row > .off-5-small {
+    margin-left: 41.66667%;
+}
+
+/* Largeur de 50% pour les colonnes */
+.row > .col-6-small {
+    width: 50%;
+}
+
+/* Définition des marges pour un décalage à gauche de 50% */
+.row > .off-6-small {
+    margin-left: 50%;
+}
+
+/* Largeur de 58,33% pour les colonnes */
+.row > .col-7-small {
+    width: 58.33333%;
+}
+
+/* Définition des marges pour un décalage à gauche de 58,33% */
+.row > .off-7-small {
+    margin-left: 58.33333%;
+}
+
+/* Largeur de 66,67% pour les colonnes */
+.row > .col-8-small {
+    width: 66.66667%;
+}
+
+/* Définition des marges pour un décalage à gauche de 66,67% */
+.row > .off-8-small {
+    margin-left: 66.66667%;
+}
+
+/* Largeur de 75% pour les colonnes */
+.row > .col-9-small {
+    width: 75%;
+}
+
+/* Définition des marges pour un décalage à gauche de 75% */
+.row > .off-9-small {
+    margin-left: 75%;
+}
+
+/* Largeur de 83,33% pour les colonnes */
+.row > .col-10-small {
+    width: 83.33333%;
+}
+
+/* Définition des marges pour un décalage à gauche de 83,33% */
+.row > .off-10-small {
+    margin-left: 83.33333%;
+}
+
+/* Largeur de 91,67% pour les colonnes */
+.row > .col-11-small {
+    width: 91.66667%;
+}
+
+/* Définition des marges pour un décalage à gauche de 91,67% */
+.row > .off-11-small {
+    margin-left: 91.66667%;
+}
+
+/* Largeur de 100% pour les colonnes */
+.row > .col-12-small {
+    width: 100%;
+}
+
+/* Définition des marges pour un décalage à gauche de 100% */
+.row > .off-12-small {
+    margin-left: 100%;
+}
+
+/* Reset des marges pour la grille avec espacement de 0 */
+.row.gtr-0 {
+    margin-top: 0;
+    margin-left: 0em;
+}
+
+/* Suppression des espacements internes pour la grille avec espacement de 0 */
+.row.gtr-0 > * {
+    padding: 0 0 0 0em;
+}
+
+/* Uniformisation des marges pour la grille avec espacement de 0 */
+.row.gtr-0.gtr-uniform {
+    margin-top: 0em;
+}
+
+/* Uniformisation des espacements internes pour la grille avec espacement de 0 */
+.row.gtr-0.gtr-uniform > * {
+    padding-top: 0em;
+}
+
+/* Définition des marges pour une grille avec espacement de 25 */
+.row.gtr-25 {
+    margin-top: 0;
+    margin-left: -0.3125em;
+}
+
+/* Définition des espacements internes pour une grille avec espacement de 25 */
+.row.gtr-25 > * {
+    padding: 0 0 0 0.3125em;
+}
+
+/* Uniformisation des marges pour la grille avec espacement de 25 */
+.row.gtr-25.gtr-uniform {
+    margin-top: -0.3125em;
+}
+
+/* Uniformisation des espacements internes pour la grille avec espacement de 25 */
+.row.gtr-25.gtr-uniform > * {
+    padding-top: 0.3125em;
+}
+
+/* Définition des marges pour une grille avec espacement de 50 */
+.row.gtr-50 {
+    margin-top: 0;
+    margin-left: -0.625em;
+}
+
+/* Définition des espacements internes pour une grille avec espacement de 50 */
+.row.gtr-50 > * {
+    padding: 0 0 0 0.625em;
+}
+
+/* Uniformisation des marges pour la grille avec espacement de 50 */
+.row.gtr-50.gtr-uniform {
+    margin-top: -0.625em;
+}
+
+/* Uniformisation des espacements internes pour la grille avec espacement de 50 */
+.row.gtr-50.gtr-uniform > * {
+    padding-top: 0.625em;
+}
+
+/* Grille par défaut avec marge externe */
+.row {
+    margin-top: 0;
+    margin-left: -1.25em;
+}
+
+/* Définition des espacements internes par défaut pour la grille */
+.row > * {
+    padding: 0 0 0 1.25em;
+}
+
+/* Uniformisation des marges pour la grille par défaut */
+.row.gtr-uniform {
+    margin-top: -1.25em;
+}
+
+/* Uniformisation des espacements internes pour la grille par défaut */
+.row.gtr-uniform > * {
+    padding-top: 1.25em;
+}
+
+/* Grille avec un espacement de 150 */
+.row.gtr-150 {
+    margin-top: 0;
+    margin-left: -1.875em;
+}
+
+/* Définition des espacements internes pour une grille avec espacement de 150 */
+.row.gtr-150 > * {
+    padding: 0 0 0 1.875em;
+}
+
+/* Uniformisation des marges pour la grille avec espacement de 150 */
+.row.gtr-150.gtr-uniform {
+    margin-top: -1.875em;
+}
+
+/* Uniformisation des espacements internes pour la grille avec espacement de 150 */
+.row.gtr-150.gtr-uniform > * {
+    padding-top: 1.875em;
+}
+
+/* Grille avec un espacement de 200 */
+.row.gtr-200 {
+    margin-top: 0;
+    margin-left: -2.5em;
+}
+
+/* Définition des espacements internes pour une grille avec espacement de 200 */
+.row.gtr-200 > * {
+    padding: 0 0 0 2.5em;
+}
+
+/* Uniformisation des marges pour la grille avec espacement de 200 */
+.row.gtr-200.gtr-uniform {
+    margin-top: -2.5em;
+}
+
+/* Uniformisation des espacements internes pour la grille avec espacement de 200 */
+.row.gtr-200.gtr-uniform > * {
+    padding-top: 2.5em;
+}
+
+/* Media queries pour les petits écrans */
+@media screen and (max-width: 480px) {
+
+    /* Affichage en flexbox pour les lignes */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+
+    /* Box-sizing pour les éléments de la grille */
+    .row > * {
+        box-sizing: border-box;
+    }
+
+    /* Retrait des marges inférieures pour le dernier élément */
+    .row.gtr-uniform > * > :last-child {
+        margin-bottom: 0;
+    }
+
+    /* Alignement à gauche */
+    .row.aln-left {
+        justify-content: flex-start;
+    }
+
+    /* Alignement centré */
+    .row.aln-center {
+        justify-content: center;
+    }
+
+    /* Alignement à droite */
+    .row.aln-right {
+        justify-content: flex-end;
+    }
+
+    /* Alignement en haut */
+    .row.aln-top {
+        align-items: flex-start;
+    }
+
+    /* Alignement au centre vertical */
+    .row.aln-middle {
+        align-items: center;
+    }
+
+    /* Alignement en bas */
+    .row.aln-bottom {
+        align-items: flex-end;
+    }
+
+    /* Modification de l'ordre d'affichage pour les éléments avec la classe 'imp-xsmall' */
+    .row > .imp-xsmall {
+        order: -1;
+    }
+}
+/* Définition de la largeur de la colonne pour un écran très petit (xsmall) */
+.row > .col-1-xsmall {
+    width: 8.33333%;
+}
+
+/* Décalage de la colonne à gauche de 8.33333% pour un écran très petit (xsmall) */
+.row > .off-1-xsmall {
+    margin-left: 8.33333%;
+}
+
+/* Largeur de la colonne augmentée à 16.66667% pour un écran très petit (xsmall) */
+.row > .col-2-xsmall {
+    width: 16.66667%;
+}
+
+/* Décalage de la colonne à gauche de 16.66667% */
+.row > .off-2-xsmall {
+    margin-left: 16.66667%;
+}
+
+/* Largeur de la colonne à 25% */
+.row > .col-3-xsmall {
+    width: 25%;
+}
+
+/* Décalage de la colonne à gauche de 25% */
+.row > .off-3-xsmall {
+    margin-left: 25%;
+}
+
+/* Largeur de la colonne à 33.33333% */
+.row > .col-4-xsmall {
+    width: 33.33333%;
+}
+
+/* Décalage de la colonne à gauche de 33.33333% */
+.row > .off-4-xsmall {
+    margin-left: 33.33333%;
+}
+
+/* Largeur de la colonne à 41.66667% */
+.row > .col-5-xsmall {
+    width: 41.66667%;
+}
+
+/* Décalage de la colonne à gauche de 41.66667% */
+.row > .off-5-xsmall {
+    margin-left: 41.66667%;
+}
+
+/* Largeur de la colonne à 50% */
+.row > .col-6-xsmall {
+    width: 50%;
+}
+
+/* Décalage de la colonne à gauche de 50% */
+.row > .off-6-xsmall {
+    margin-left: 50%;
+}
+
+/* Largeur de la colonne à 58.33333% */
+.row > .col-7-xsmall {
+    width: 58.33333%;
+}
+
+/* Décalage de la colonne à gauche de 58.33333% */
+.row > .off-7-xsmall {
+    margin-left: 58.33333%;
+}
+
+/* Largeur de la colonne à 66.66667% */
+.row > .col-8-xsmall {
+    width: 66.66667%;
+}
+
+/* Décalage de la colonne à gauche de 66.66667% */
+.row > .off-8-xsmall {
+    margin-left: 66.66667%;
+}
+
+/* Largeur de la colonne à 75% */
+.row > .col-9-xsmall {
+    width: 75%;
+}
+
+/* Décalage de la colonne à gauche de 75% */
+.row > .off-9-xsmall {
+    margin-left: 75%;
+}
+
+/* Largeur de la colonne à 83.33333% */
+.row > .col-10-xsmall {
+    width: 83.33333%;
+}
+
+/* Décalage de la colonne à gauche de 83.33333% */
+.row > .off-10-xsmall {
+    margin-left: 83.33333%;
+}
+
+/* Largeur de la colonne à 91.66667% */
+.row > .col-11-xsmall {
+    width: 91.66667%;
+}
+
+/* Décalage de la colonne à gauche de 91.66667% */
+.row > .off-11-xsmall {
+    margin-left: 91.66667%;
+}
+
+/* Largeur maximale de la colonne à 100% */
+.row > .col-12-xsmall {
+    width: 100%;
+}
+
+/* Décalage de la colonne à gauche de 100% */
+.row > .off-12-xsmall {
+    margin-left: 100%;
+}
+
+/* Gestion des marges et du padding pour une grille avec un espacement nul (gtr-0) */
+.row.gtr-0 {
+    margin-top: 0;
+    margin-left: 0em;
+}
+
+.row.gtr-0 > * {
+    padding: 0 0 0 0em;
+}
+
+/* Gestion des marges uniformes pour la grille avec espacement nul (gtr-0.gtr-uniform) */
+.row.gtr-0.gtr-uniform {
+    margin-top: 0em;
+}
+
+.row.gtr-0.gtr-uniform > * {
+    padding-top: 0em;
+}
+
+/* Gestion des marges pour une grille avec un espacement de 0.3125em (gtr-25) */
+.row.gtr-25 {
+    margin-top: 0;
+    margin-left: -0.3125em;
+}
+
+.row.gtr-25 > * {
+    padding: 0 0 0 0.3125em;
+}
+
+/* Gestion des marges uniformes pour la grille avec espacement de 0.3125em */
+.row.gtr-25.gtr-uniform {
+    margin-top: -0.3125em;
+}
+
+.row.gtr-25.gtr-uniform > * {
+    padding-top: 0.3125em;
+}
+
+/* Gestion des marges pour une grille avec un espacement de 0.625em (gtr-50) */
+.row.gtr-50 {
+    margin-top: 0;
+    margin-left: -0.625em;
+}
+
+.row.gtr-50 > * {
+    padding: 0 0 0 0.625em;
+}
+
+/* Gestion des marges uniformes pour la grille avec espacement de 0.625em */
+.row.gtr-50.gtr-uniform {
+    margin-top: -0.625em;
+}
+
+.row.gtr-50.gtr-uniform > * {
+    padding-top: 0.625em;
+}
+
+/* Gestion générale des marges pour les lignes de la grille */
+.row {
+    margin-top: 0;
+    margin-left: -1.25em;
+}
+/* Cette classe s'applique à tous les enfants directs de .row avec un padding à gauche. */
+.row > * {
+    padding: 0 0 0 1.25em;
+}
+
+/* Cette classe retire une marge en haut dans une ligne avec des éléments uniformes. */
+.row.gtr-uniform {
+    margin-top: -1.25em;
+}
+
+/* Applique un padding en haut aux éléments directs dans une ligne uniforme. */
+.row.gtr-uniform > * {
+    padding-top: 1.25em;
+}
+
+/* Gère les marges d'une ligne avec une grille de taille 150%. */
+.row.gtr-150 {
+    margin-top: 0;
+    margin-left: -1.875em;
+}
+
+/* Applique un padding à gauche aux éléments dans une ligne avec une grille de 150%. */
+.row.gtr-150 > * {
+    padding: 0 0 0 1.875em;
+}
+
+/* Ajuste la marge supérieure pour une grille uniforme de 150%. */
+.row.gtr-150.gtr-uniform {
+    margin-top: -1.875em;
+}
+
+/* Applique un padding supérieur dans une grille uniforme de 150%. */
+.row.gtr-150.gtr-uniform > * {
+    padding-top: 1.875em;
+}
+
+/* Gère les marges pour une grille de taille 200%. */
+.row.gtr-200 {
+    margin-top: 0;
+    margin-left: -2.5em;
+}
+
+/* Applique un padding à gauche aux éléments dans une grille de 200%. */
+.row.gtr-200 > * {
+    padding: 0 0 0 2.5em;
+}
+
+/* Ajuste la marge supérieure dans une grille uniforme de 200%. */
+.row.gtr-200.gtr-uniform {
+    margin-top: -2.5em;
+}
+
+/* Applique un padding supérieur dans une grille uniforme de 200%. */
+.row.gtr-200.gtr-uniform > * {
+    padding-top: 2.5em;
+}
+
+/* Section ou article avec un texte centré. */
+section.special, article.special {
+    text-align: center;
+}
+
+/* Gestion de la largeur et de la marge du header principal. */
+header.major {
+    width: max-content;
+    margin-bottom: 2em;
+}
+
+/* Enlève la marge pour le premier enfant du header major. */
+header.major > :first-child {
+    margin-bottom: 0;
+    width: calc(100% + 0.5em);
+}
+
+/* Ajoute une ligne décorative sous le premier enfant du header major. */
+header.major > :first-child:after {
+    content: '';
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    margin: 0.325em 0 0.5em 0;
+    width: 100%;
+}
+
+/* Style pour le texte dans le header major. */
+header.major > p {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* Ajuste la largeur de la ligne sous le titre pour les utilisateurs d'Internet Explorer. */
+body.is-ie header.major > :first-child:after {
+    max-width: 9em;
+}
+
+body.is-ie header.major > h1:after {
+    max-width: 100% !important;
+}
+
+/* Style du header pour les petits écrans. */
+@media screen and (max-width: 736px) {
+    header.major > p br {
+        display: none;
+    }
+}
+
+/* Style global pour les formulaires. */
+form {
+    margin: 0 0 2em 0;
+}
+
+/* Enlève la marge en bas du dernier enfant du formulaire. */
+form > :last-child {
+    margin-bottom: 0;
+}
+
+/* Style pour les champs du formulaire avec flexbox. */
+form > .fields {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 3em);
+    margin: -1.5em 0 2em -1.5em;
+}
+
+/* Style des champs individuels dans le formulaire. */
+form > .fields > .field {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.5em 0 0 1.5em;
+    width: calc(100% - 1.5em);
+}
+
+/* Style pour les champs qui occupent la moitié de la largeur. */
+form > .fields > .field.half {
+    width: calc(50% - 0.75em);
+}
+
+/* Style pour les champs qui occupent un tiers de la largeur. */
+form > .fields > .field.third {
+    width: calc(100% / 3 - 0.5em);
+}
+
+/* Style pour les champs qui occupent un quart de la largeur. */
+form > .fields > .field.quarter {
+    width: calc(25% - 0.375em);
+}
+
+/* Ajustements pour les petits écrans. */
+@media screen and (max-width: 480px) {
+    form > .fields {
+        width: calc(100% + 3em);
+        margin: -1.5em 0 2em -1.5em;
+    }
+
+    /* Champs du formulaire sur petits écrans. */
+    form > .fields > .field {
+        padding: 1.5em 0 0 1.5em;
+        width: calc(100% - 1.5em);
+    }
+
+    /* Champs demi-largeur sur petits écrans. */
+    form > .fields > .field.half {
+        width: calc(100% - 1.5em);
+    }
+
+    /* Champs tiers sur petits écrans. */
+    form > .fields > .field.third {
+        width: calc(100% - 1.5em);
+    }
+
+    /* Champs quart sur petits écrans. */
+    form > .fields > .field.quarter {
+        width: calc(100% - 1.5em);
+    }
+}
+
+/* Style pour les labels des formulaires. */
+label {
+    color: #ffffff;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+/* Appliquer les styles communs à plusieurs types d'input, select et textarea */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+    /* Suppression de l'apparence par défaut des éléments */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    
+    /* Couleur de fond légèrement transparente */
+    background: rgba(212, 212, 255, 0.035);
+    
+    /* Pas de bordure et suppression des coins arrondis */
+    border: none;
+    border-radius: 0;
+    
+    /* Le texte conserve sa couleur d'origine */
+    color: inherit;
+    
+    /* Les éléments prennent toute la largeur disponible */
+    display: block;
+    
+    /* Suppression de l'outline (contour) au focus */
+    outline: 0;
+    
+    /* Padding intérieur horizontal pour le texte */
+    padding: 0 1em;
+    
+    /* Suppression de la décoration du texte (ex: soulignement) */
+    text-decoration: none;
+    
+    /* Le champ occupe 100% de la largeur */
+    width: 100%;
+}
+
+/* Empêcher l'ombre de s'afficher si les champs sont invalides */
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="search"]:invalid,
+input[type="url"]:invalid,
+select:invalid,
+textarea:invalid {
+    /* Suppression de l'ombre dans le cas d'une saisie invalide */
+    box-shadow: none;
+}
+
+/* Style des éléments au focus (lorsqu'on clique dedans) */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+    /* Couleur de la bordure au focus */
+    border-color: #9bf1ff;
+    
+    /* Ombre colorée autour du champ au focus */
+    box-shadow: 0 0 0 2px #9bf1ff;
+}
+
+/* Style spécifique pour les menus déroulants (select) */
+select {
+    /* Ajouter une icône SVG personnalisée à droite du menu */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg ... %3E");
+    
+    /* Taille et positionnement de l'icône */
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) center;
+    
+    /* Hauteur du menu déroulant */
+    height: 2.75em;
+    
+    /* Padding à droite pour éviter que le texte n'empiète sur l'icône */
+    padding-right: 2.75em;
+    
+    /* Gestion du débordement de texte */
+    text-overflow: ellipsis;
+}
+
+/* Style des options dans le menu déroulant */
+select option {
+    /* Couleur blanche pour le texte */
+    color: #ffffff;
+    
+    /* Fond sombre pour les options */
+    background: #242943;
+}
+
+/* Désactiver le style particulier sur les options dans Internet Explorer */
+select:focus::-ms-value {
+    background-color: transparent;
+}
+
+/* Masquer l'icône par défaut dans Internet Explorer */
+select::-ms-expand {
+    display: none;
+}
+
+/* Adapter la hauteur des inputs texte, mot de passe, email, téléphone, recherche, URL et select */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select {
+    height: 2.75em;
+}
+
+/* Ajuster le padding pour les textarea */
+textarea {
+    padding: 0.75em 1em;
+}
+
+/* Styles des boutons radio et cases à cocher */
+input[type="checkbox"],
+input[type="radio"] {
+    /* Suppression de l'apparence par défaut */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    
+    /* Afficher le bouton en bloc avec un flottement à gauche */
+    display: block;
+    float: left;
+    
+    /* Réduction de l'espace à droite */
+    margin-right: -2em;
+    
+    /* Transparence et taille du bouton */
+    opacity: 0;
+    width: 1em;
+    
+    /* Positionnement sous les autres éléments */
+    z-index: -1;
+}
+
+/* Style des labels associés aux cases à cocher et boutons radio */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    /* Aucun soulignement pour les labels */
+    text-decoration: none;
+    
+    /* Couleur blanche pour les labels */
+    color: #ffffff;
+    
+    /* Le label est cliquable et prend un curseur pointer */
+    cursor: pointer;
+    
+    /* Label en ligne avec un padding à gauche pour l'espace du bouton */
+    display: inline-block;
+    padding-left: 2.65em;
+    padding-right: 0.75em;
+    
+    /* Position relative pour l'alignement du pseudo-élément */
+    position: relative;
+}
+
+/* Style avant l'élément (petit carré ou rond) dans le label des checkboxes et radios */
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+    background: rgba(212, 212, 255, 0.035);
+    
+    /* Pseudo-élément vide qui sera le carré ou le rond */
+    content: '';
+    
+    /* Dimension du pseudo-élément */
+    display: inline-block;
+    height: 2.0625em;
+    width: 2.0625em;
+    
+    /* Alignement au centre du label */
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    /* Centrage du contenu */
+    text-align: center;
+}
+
+/* Style des labels lorsque la case est cochée */
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+    /* Changement du fond et de la bordure lorsque coché */
+    background: #ffffff;
+    border-color: #9bf1ff;
+    
+    /* Contenu unicode pour une coche */
+    content: '\f00c';
+    color: #242943;
+}
+
+/* Effet focus pour les checkboxes et radios */
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 2px #9bf1ff;
+}
+
+/* Rond pour les boutons radio */
+input[type="radio"] + label:before {
+    border-radius: 100%;
+}
+
+/* Placeholder avec opacité pour les différents navigateurs */
+::-webkit-input-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+}
+
+:-moz-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+}
+
+::-moz-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+}
+
+:-ms-input-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+}
+
+/* Style pour une boîte contenant des éléments */
+.box {
+    /* Bordure légèrement visible et padding intérieur */
+    border: solid 1px rgba(212, 212, 255, 0.1);
+    margin-bottom: 2em;
+    padding: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+
+/* icône */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+		.icon.alt:before {
+			background-color: #ffffff;
+			border-radius: 100%;
+			color: #242943;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		}
+
+	a.icon.alt:before {
+		-moz-transition: background-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
+	}
+
+	a.icon.alt:hover:before {
+		background-color: #6fc3df;
+	}
+
+	a.icon.alt:active:before {
+		background-color: #37a6cb;
+	}
+
+/* Image */
+
+	.image {
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image img {
+			display: block;
+		}
+
+		.image.left, .image.right {
+			max-width: 30%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.left {
+			float: left;
+			margin: 0 1.5em 1.25em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			margin: 0 0 1.25em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+		.image.main {
+			display: block;
+			margin: 2.5em 0;
+			width: 100%;
+		}
+
+			.image.main img {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.image.main {
+					margin: 1.5em 0;
+				}
+
+			}
+
+/* Listes */
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 2em 0;
+		padding-left: 1.25em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+		ul.alt {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.alt li {
+				border-top: solid 1px rgba(212, 212, 255, 0.1);
+				padding: 0.5em 0;
+			}
+
+				ul.alt li:first-child {
+					border-top: 0;
+					padding-top: 0;
+				}
+
+	dl {
+		margin: 0 0 2em 0;
+	}
+
+		dl dt {
+			display: block;
+			font-weight: 600;
+			margin: 0 0 1em 0;
+		}
+
+		dl dd {
+			margin-left: 2em;
+		}
+
+/* actions */
+
+	ul.actions {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		cursor: default;
+		list-style: none;
+		margin-left: -1em;
+		padding-left: 0;
+	}
+
+		ul.actions li {
+			padding: 0 0 0 1em;
+			vertical-align: middle;
+		}
+/* Styles pour les actions spéciales */
+ul.actions.special {
+    -moz-justify-content: center; /* Justification pour Firefox */
+    -webkit-justify-content: center; /* Justification pour Chrome/Safari */
+    -ms-justify-content: center; /* Justification pour IE */
+    justify-content: center; /* Justification standard */
+    width: 100%; /* Largeur à 100% */
+    margin-left: 0; /* Aucune marge à gauche */
+}
+
+ul.actions.special li:first-child {
+    padding-left: 0; /* Pas de padding à gauche pour le premier élément */
+}
+
+/* Styles pour les actions empilées */
+ul.actions.stacked {
+    -moz-flex-direction: column; /* Direction flexible pour Firefox */
+    -webkit-flex-direction: column; /* Direction flexible pour Chrome/Safari */
+    -ms-flex-direction: column; /* Direction flexible pour IE */
+    flex-direction: column; /* Direction flexible standard */
+    margin-left: 0; /* Aucune marge à gauche */
+}
+
+ul.actions.stacked li {
+    padding: 1.3em 0 0 0; /* Padding pour les éléments de la liste */
+}
+
+ul.actions.stacked li:first-child {
+    padding-top: 0; /* Pas de padding en haut pour le premier élément */
+}
+
+/* Styles pour les actions adaptées */
+ul.actions.fit {
+    width: calc(100% + 1em); /* Largeur calculée */
+}
+
+ul.actions.fit li {
+    -moz-flex-grow: 1; /* Croissance flexible pour Firefox */
+    -webkit-flex-grow: 1; /* Croissance flexible pour Chrome/Safari */
+    -ms-flex-grow: 1; /* Croissance flexible pour IE */
+    flex-grow: 1; /* Croissance flexible standard */
+    -moz-flex-shrink: 1; /* Réduction flexible pour Firefox */
+    -webkit-flex-shrink: 1; /* Réduction flexible pour Chrome/Safari */
+    -ms-flex-shrink: 1; /* Réduction flexible pour IE */
+    flex-shrink: 1; /* Réduction flexible standard */
+    width: 100%; /* Largeur à 100% */
+}
+
+ul.actions.fit li > * {
+    width: 100%; /* Largeur à 100% pour les enfants des éléments de la liste */
+}
+
+ul.actions.fit.stacked {
+    width: 100%; /* Largeur à 100% pour les actions empilées */
+}
+
+/* Styles pour les icônes */
+ul.icons {
+    cursor: default; /* Curseur par défaut */
+    list-style: none; /* Pas de style de liste */
+    padding-left: 0; /* Aucune marge à gauche */
+}
+
+ul.icons li {
+    display: inline-block; /* Affichage en ligne pour les éléments de la liste */
+    padding: 0 1em 0 0; /* Padding à droite */
+}
+
+ul.icons li:last-child {
+    padding-right: 0; /* Pas de padding à droite pour le dernier élément */
+}
+
+@media screen and (max-width: 736px) {
+    /* Ajustements pour les petits écrans */
+    ul.icons li {
+        padding: 0 0.75em 0 0; /* Réduction du padding pour les petits écrans */
+    }
+}
+
+/* Styles pour la pagination */
+ul.pagination {
+    cursor: default; /* Curseur par défaut */
+    list-style: none; /* Pas de style de liste */
+    padding-left: 0; /* Aucune marge à gauche */
+}
+
+ul.pagination li {
+    display: inline-block; /* Affichage en ligne pour les éléments de la liste */
+    padding-left: 0; /* Aucune marge à gauche */
+    vertical-align: middle; /* Alignement vertical au milieu */
+}
+
+ul.pagination li > .page {
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Firefox */
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Chrome/Safari */
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour IE */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition standard */
+    border-bottom: 0; /* Pas de bord en bas */
+    display: inline-block; /* Affichage en ligne */
+    font-size: 0.8em; /* Taille de police */
+    font-weight: 600; /* Poids de la police */
+    height: 1.5em; /* Hauteur */
+    line-height: 1.5em; /* Hauteur de ligne */
+    margin: 0 0.125em; /* Marge horizontale */
+    min-width: 1.5em; /* Largeur minimale */
+    padding: 0 0.5em; /* Padding horizontal */
+    text-align: center; /* Alignement centré */
+}
+
+ul.pagination li > .page.active {
+    background-color: #ffffff; /* Couleur de fond pour l'élément actif */
+    color: #242943; /* Couleur du texte pour l'élément actif */
+}
+
+ul.pagination li > .page.active:hover {
+    background-color: #9bf1ff; /* Couleur de fond au survol pour l'élément actif */
+    color: #242943 !important; /* Couleur du texte au survol pour l'élément actif */
+}
+
+ul.pagination li > .page.active:active {
+    background-color: #53e3fb; /* Couleur de fond lors de l'activation pour l'élément actif */
+}
+
+ul.pagination li:first-child {
+    padding-right: 0.75em; /* Padding à droite pour le premier élément */
+}
+
+ul.pagination li:last-child {
+    padding-left: 0.75em; /* Padding à gauche pour le dernier élément */
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustements pour les très petits écrans */
+    ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
+        display: none; /* Masquer certains éléments de la pagination */
+    }
+
+    ul.pagination li:first-child {
+        padding-right: 0; /* Pas de padding à droite pour le premier élément */
+    }
+}
+
+/* Styles pour le tableau */
+.table-wrapper {
+    -webkit-overflow-scrolling: touch; /* Défilement fluide sur les appareils tactiles */
+    overflow-x: auto; /* Défilement horizontal automatique */
+}
+
+table {
+    margin: 0 0 2em 0; /* Marges pour le tableau */
+    width: 100%; /* Largeur à 100% */
+}
+
+table tbody tr {
+    border: solid 1px rgba(212, 212, 255, 0.1); /* Bordure pour les lignes du corps */
+    border-left: 0; /* Pas de bordure à gauche */
+    border-right: 0; /* Pas de bordure à droite */
+}
+
+table tbody tr:nth-child(2n + 1) {
+    background-color: rgba(212, 212, 255, 0.035); /* Couleur de fond pour les lignes impaires */
+}
+
+table td {
+    padding: 0.75em 0.75em; /* Padding pour les cellules */
+}
+
+table th {
+    color: #ffffff; /* Couleur du texte pour les en-têtes */
+    font-size: 0.9em; /* Taille de police pour les en-têtes */
+    font-weight: 600; /* Poids de la police pour les en-têtes */
+    padding: 0 0.75em 0.75em 0.75em; /* Padding pour les en-têtes */
+    text-align: left; /* Alignement à gauche pour les en-têtes */
+}
+
+table thead {
+    border-bottom: solid 2px rgba(212, 212, 255, 0.1); /* Bordure en bas pour l'en-tête */
+}
+
+table tfoot {
+    border-top: solid 2px rgba(212, 212, 255, 0.1); /* Bordure en haut pour le pied de page */
+}
+
+table.alt {
+    border-collapse: separate; /* Séparation des bordures pour le tableau alternatif */
+}
+
+table.alt tbody tr td {
+    border: solid 1px rgba(212, 212, 255, 0.1); /* Bordure pour les cellules du tableau alternatif */
+    border-left-width: 0; /* Pas de bordure à gauche */
+    border-top-width: 0; /* Pas de bordure en haut */
+}
+
+table.alt tbody tr td:first-child {
+    border-left-width: 1px; /* Bordure à gauche pour la première cellule */
+}
+/* Styles pour les bordures des tableaux alternatifs */
+table.alt tbody tr:first-child td {
+    border-top-width: 1px; /* Définit l'épaisseur de la bordure supérieure du premier enfant d'un tableau */
+}
+
+table.alt thead {
+    border-bottom: 0; /* Supprime la bordure inférieure de l'en-tête du tableau */
+}
+
+table.alt tfoot {
+    border-top: 0; /* Supprime la bordure supérieure du pied de tableau */
+}
+
+/* Styles pour les boutons */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none; /* Supprime l'apparence par défaut pour Firefox */
+    -webkit-appearance: none; /* Supprime l'apparence par défaut pour Safari */
+    -ms-appearance: none; /* Supprime l'apparence par défaut pour Internet Explorer */
+    appearance: none; /* Supprime l'apparence par défaut pour tous les navigateurs */
+    -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Firefox */
+    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Safari */
+    -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Internet Explorer */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour tous les navigateurs */
+    background-color: transparent; /* Définit un fond transparent */
+    border: 0; /* Supprime la bordure */
+    border-radius: 0; /* Supprime les coins arrondis */
+    box-shadow: inset 0 0 0 2px #ffffff; /* Définit une ombre interne blanche */
+    color: #ffffff; /* Définit la couleur du texte en blanc */
+    cursor: pointer; /* Change le curseur au survol */
+    display: inline-block; /* Définit le style d'affichage en bloc en ligne */
+    font-size: 0.8em; /* Définit la taille de la police */
+    font-weight: 600; /* Définit le poids de la police */
+    height: 3.5em; /* Définit la hauteur des boutons */
+    letter-spacing: 0.25em; /* Définit l'espacement entre les lettres */
+    line-height: 3.5em; /* Définit la hauteur de ligne */
+    padding: 0 1.75em; /* Définit le rembourrage horizontal */
+    text-align: center; /* Centre le texte */
+    text-decoration: none; /* Supprime la décoration du texte */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    white-space: nowrap; /* Empêche le texte de se déplacer à la ligne */
+}
+
+/* Styles pour l'état survolé ou actif des boutons */
+input[type="submit"]:hover, 
+input[type="submit"]:active,
+input[type="reset"]:hover,
+input[type="reset"]:active,
+input[type="button"]:hover,
+input[type="button"]:active,
+button:hover,
+button:active,
+.button:hover,
+.button:active {
+    box-shadow: inset 0 0 0 2px #9bf1ff; /* Change la couleur de l'ombre au survol */
+    color: #9bf1ff; /* Change la couleur du texte au survol */
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+    background-color: rgba(155, 241, 255, 0.1); /* Définit une couleur de fond lors de l'activation */
+    box-shadow: inset 0 0 0 2px #53e3fb; /* Change l'ombre lors de l'activation */
+    color: #53e3fb; /* Change la couleur du texte lors de l'activation */
+}
+
+/* Styles pour les boutons avec une icône */
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="button"].icon:before,
+button.icon:before,
+.button.icon:before {
+    margin-right: 0.5em; /* Ajoute un espacement à droite de l'icône */
+}
+
+/* Styles pour les boutons qui s'étendent sur 100% de la largeur */
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+button.fit,
+.button.fit {
+    width: 100%; /* Définit la largeur à 100% */
+}
+
+/* Styles pour les petits boutons */
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+    font-size: 0.6em; /* Définit une taille de police plus petite */
+}
+
+/* Styles pour les grands boutons */
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large,
+button.large,
+.button.large {
+    font-size: 1.25em; /* Définit une taille de police plus grande */
+    height: 3em; /* Définit une hauteur spécifique */
+    line-height: 3em; /* Ajuste la hauteur de ligne */
+}
+	/* Cible les boutons de type submit, reset, button et les boutons avec la classe 'next' */
+	input[type="submit"].next,
+	input[type="reset"].next,
+	input[type="button"].next,
+	button.next,
+	.button.next {
+		/* Ajoute un espace à droite pour le padding */
+		padding-right: 4.5em;
+		/* Position relative pour positionner les éléments enfants */
+		position: relative;
+	}
+
+	/* Styles appliqués avant et après les boutons */
+	input[type="submit"].next:before, input[type="submit"].next:after,
+	input[type="reset"].next:before,
+	input[type="reset"].next:after,
+	input[type="button"].next:before,
+	input[type="button"].next:after,
+	button.next:before,
+	button.next:after,
+	.button.next:before,
+	.button.next:after {
+		/* Transition pour l'opacité */
+		-moz-transition: opacity 0.2s ease-in-out;
+		-webkit-transition: opacity 0.2s ease-in-out;
+		-ms-transition: opacity 0.2s ease-in-out;
+		transition: opacity 0.2s ease-in-out;
+		/* Positionnement de l'image de fond */
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-size: 36px 24px;
+		/* Nécessaire pour afficher l'image de fond */
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		right: 1.5em;
+		top: 0;
+		vertical-align: middle;
+		width: 36px;
+	}
+
+	/* Image de fond pour l'état avant du bouton */
+	input[type="submit"].next:before,
+	input[type="reset"].next:before,
+	input[type="button"].next:before,
+	button.next:before,
+	.button.next:before {
+		/* URL de l'image SVG pour l'icône avant */
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+	}
+
+	/* Image de fond pour l'état après du bouton */
+	input[type="submit"].next:after,
+	input[type="reset"].next:after,
+	input[type="button"].next:after,
+	button.next:after,
+	.button.next:after {
+		/* URL de l'image SVG pour l'icône après */
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+		/* Initialement caché avec opacité 0 */
+		opacity: 0;
+		z-index: 1;
+	}
+
+	/* Lorsque l'utilisateur survole ou clique sur le bouton */
+	input[type="submit"].next:hover:after, input[type="submit"].next:active:after,
+	input[type="reset"].next:hover:after,
+	input[type="reset"].next:active:after,
+	input[type="button"].next:hover:after,
+	input[type="button"].next:active:after,
+	button.next:hover:after,
+	button.next:active:after,
+	.button.next:hover:after,
+	.button.next:active:after {
+		/* Rend l'icône après visible */
+		opacity: 1;
+	}
+
+	/* Styles spécifiques pour les écrans de taille maximale 1280px */
+	@media screen and (max-width: 1280px) {
+		/* Ajuste le padding pour les petits écrans */
+		input[type="submit"].next,
+		input[type="reset"].next,
+		input[type="button"].next,
+		button.next,
+		.button.next {
+			padding-right: 5em;
+		}
+	}
+
+	/* Cible les boutons de type submit, reset, button et les boutons avec la classe 'primary' */
+	input[type="submit"].primary,
+	input[type="reset"].primary,
+	input[type="button"].primary,
+	button.primary,
+	.button.primary {
+		/* Couleur de fond et de texte */
+		background-color: #ffffff;
+		box-shadow: none;
+		color: #242943;
+	}
+
+	/* Styles lorsque l'utilisateur survole ou clique sur le bouton primaire */
+	input[type="submit"].primary:hover, input[type="submit"].primary:active,
+	input[type="reset"].primary:hover,
+	input[type="reset"].primary:active,
+	input[type="button"].primary:hover,
+	input[type="button"].primary:active,
+	button.primary:hover,
+	button.primary:active,
+	.button.primary:hover,
+	.button.primary:active {
+		/* Change la couleur de fond lors de l'interaction */
+		background-color: #9bf1ff;
+		color: #242943 !important;
+	}
+
+	/* Styles pour l'état actif du bouton primaire */
+	input[type="submit"].primary:active,
+	input[type="reset"].primary:active,
+	input[type="button"].primary:active,
+	button.primary:active,
+	.button.primary:active {
+		/* Couleur de fond lors de l'activation */
+		background-color: #53e3fb;
+	}
+/* Styles pour les boutons désactivés */
+input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+button.disabled,
+button:disabled,
+.button.disabled,
+.button:disabled {
+    pointer-events: none; /* Empêche les événements de pointer sur les boutons désactivés */
+    cursor: default; /* Change le curseur en défaut pour les boutons désactivés */
+    opacity: 0.25; /* Réduit l'opacité pour indiquer visuellement que le bouton est désactivé */
+}
+
+/* Grilles de contenu */
+.tiles {
+    display: -moz-flex; /* Support pour Firefox */
+    display: -webkit-flex; /* Support pour Safari */
+    display: -ms-flex; /* Support pour Internet Explorer */
+    display: flex; /* Active le modèle de flexbox */
+    -moz-flex-wrap: wrap; /* Support pour Firefox */
+    -webkit-flex-wrap: wrap; /* Support pour Safari */
+    -ms-flex-wrap: wrap; /* Support pour Internet Explorer */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    border-top: 0 !important; /* Supprime la bordure supérieure pour la grille */
+}
+
+/* Supprime la bordure supérieure pour les éléments suivants dans la grille */
+.tiles + * {
+    border-top: 0 !important; /* Supprime la bordure pour tous les éléments après .tiles */
+}
+
+.tiles article {
+    -moz-align-items: center; /* Centre les éléments pour Firefox */
+    -webkit-align-items: center; /* Centre les éléments pour Safari */
+    -ms-align-items: center; /* Centre les éléments pour Internet Explorer */
+    align-items: center; /* Centre les éléments de manière générale */
+    display: -moz-flex; /* Support pour Firefox */
+    display: -webkit-flex; /* Support pour Safari */
+    display: -ms-flex; /* Support pour Internet Explorer */
+    display: flex; /* Active le modèle de flexbox pour les articles */
+    -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease; /* Transition pour Firefox */
+    -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease; /* Transition pour Safari */
+    -ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease; /* Transition pour Internet Explorer */
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease; /* Transition générale */
+    padding: 4em 4em 2em 4em; /* Ajoute du padding à l'article */
+    background-position: center; /* Centre l'image de fond */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-size: cover; /* Couvre tout l'article avec l'image de fond */
+    cursor: default; /* Définit le curseur par défaut */
+    height: 40vh; /* Définit la hauteur de l'article à 40% de la hauteur de la fenêtre */
+    max-height: 40em; /* Hauteur maximale de 40em */
+    min-height: 23em; /* Hauteur minimale de 23em */
+    overflow: hidden; /* Cache tout débordement du contenu */
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+    width: 40%; /* Définit la largeur de l'article à 40% */
+}
+
+.tiles article .image {
+    display: none; /* Cache l'image à l'intérieur de l'article */
+}
+
+.tiles article header {
+    position: relative; /* Positionnement relatif pour le header */
+    z-index: 3; /* Positionne le header au-dessus des autres éléments */
+}
+
+.tiles article h3 {
+    font-size: 1.75em; /* Définit la taille de la police pour le titre */
+}
+
+.tiles article h3 a:hover {
+    color: inherit !important; /* Conserve la couleur du texte au survol du lien */
+}
+
+.tiles article .link.primary {
+    border: 0; /* Supprime la bordure du lien principal */
+    height: 100%; /* Définit la hauteur à 100% */
+    left: 0; /* Positionne à gauche */
+    position: absolute; /* Positionnement absolu pour couvrir l'article */
+    top: 0; /* Positionne en haut */
+    width: 100%; /* Définit la largeur à 100% */
+    z-index: 4; /* Positionne le lien au-dessus des autres éléments */
+}
+
+.tiles article:before {
+    -moz-transition: opacity 0.5s ease; /* Transition pour Firefox */
+    -webkit-transition: opacity 0.5s ease; /* Transition pour Safari */
+    -ms-transition: opacity 0.5s ease; /* Transition pour Internet Explorer */
+    transition: opacity 0.5s ease; /* Transition générale pour l'opacité */
+    bottom: 0; /* Positionne en bas */
+    content: ''; /* Nécessaire pour le pseudo-élément */
+    display: block; /* Affiche le pseudo-élément */
+    height: 100%; /* Définit la hauteur à 100% */
+    left: 0; /* Positionne à gauche */
+    opacity: 0.85; /* Définit l'opacité à 85% */
+    position: absolute; /* Positionnement absolu */
+    width: 100%; /* Définit la largeur à 100% */
+    z-index: 2; /* Positionne le pseudo-élément au-dessus du fond */
+}
+
+.tiles article:after {
+    background-color: rgba(36, 41, 67, 0.25); /* Couleur de fond avec transparence */
+    content: ''; /* Nécessaire pour le pseudo-élément */
+    display: block; /* Affiche le pseudo-élément */
+    height: 100%; /* Définit la hauteur à 100% */
+    left: 0; /* Positionne à gauche */
+    position: absolute; /* Positionnement absolu */
+    top: 0; /* Positionne en haut */
+    width: 100%; /* Définit la largeur à 100% */
+    z-index: 1; /* Positionne le pseudo-élément en dessous du contenu principal */
+}
+
+/* Effet au survol : rend le pseudo-élément :before transparent */
+.tiles article:hover:before {
+    opacity: 0; /* Rend l'élément transparent au survol */
+}
+/* Styles pour les articles en transition */
+.tiles article.is-transitioning {
+    /* Réduit la taille de l'article lors de la transition */
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    
+    /* Applique un flou à l'article en transition */
+    -moz-filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+    -ms-filter: blur(0.5em);
+    filter: blur(0.5em);
+    
+    /* Rend l'article transparent */
+    opacity: 0;
+}
+
+/* Styles pour certains articles basés sur leur position */
+.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+    /* Définit la largeur des articles à 60% pour certains d'entre eux */
+    width: 60%;
+}
+
+/* Styles de fond pour les articles selon leur position dans le conteneur */
+.tiles article:nth-child(6n - 5):before {
+    background-color: #6fc3df; /* Couleur de fond pour le 5ème article */
+}
+
+.tiles article:nth-child(6n - 4):before {
+    background-color: #8d82c4; /* Couleur de fond pour le 4ème article */
+}
+
+.tiles article:nth-child(6n - 3):before {
+    background-color: #ec8d81; /* Couleur de fond pour le 3ème article */
+}
+
+.tiles article:nth-child(6n - 2):before {
+    background-color: #e7b788; /* Couleur de fond pour le 2ème article */
+}
+
+.tiles article:nth-child(6n - 1):before {
+    background-color: #8ea9e8; /* Couleur de fond pour le 1er article */
+}
+
+.tiles article:nth-child(6n):before {
+    background-color: #87c5a4; /* Couleur de fond pour le 6ème article */
+}
+
+/* Styles pour les écrans de taille maximale de 1280px */
+@media screen and (max-width: 1280px) {
+    .tiles article {
+        /* Ajoute du padding et fixe la hauteur des articles */
+        padding: 4em 3em 2em 3em;
+        height: 30vh;
+        max-height: 30em;
+        min-height: 20em;
+    }
+}
+
+/* Styles pour les écrans de taille maximale de 980px */
+@media screen and (max-width: 980px) {
+    .tiles article {
+        /* Définit la largeur des articles à 50% */
+        width: 50% !important;
+    }
+}
+
+/* Styles pour les écrans de taille maximale de 736px */
+@media screen and (max-width: 736px) {
+    .tiles article {
+        /* Ajuste le padding et la hauteur des articles */
+        padding: 3em 1.5em 1em 1.5em;
+        height: 16em;
+        max-height: none;
+        min-height: 0;
+    }
+
+    .tiles article h3 {
+        /* Ajuste la taille de la police du titre */
+        font-size: 1.5em;
+    }
+}
+
+/* Styles pour les écrans de taille maximale de 480px */
+@media screen and (max-width: 480px) {
+    .tiles {
+        display: block; /* Affiche les articles en bloc */
+    }
+
+    .tiles article {
+        /* Définit la hauteur et la largeur des articles à 100% */
+        height: 20em;
+        width: 100% !important;
+    }
+}
+
+/* Méthode de contact */
+.contact-method {
+    margin: 0 0 2em 0; /* Marge inférieure pour espacer les méthodes de contact */
+    padding-left: 3.25em; /* Ajoute du padding à gauche */
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+}
+
+.contact-method .icon {
+    /* Positionne l'icône dans la méthode de contact */
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contact-method h3 {
+    /* Ajuste la marge du titre de la méthode de contact */
+    margin: 0 0 0.5em 0;
+}
+
+/* Projecteurs */
+.spotlights {
+    border-top: 0 !important; /* Supprime la bordure supérieure */
+}
+
+.spotlights + * {
+    border-top: 0 !important; /* Supprime la bordure supérieure pour les éléments suivants */
+}
+
+.spotlights > section {
+    /* Affiche les sections de projecteurs en flexbox */
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #2e3450; /* Couleur de fond des projecteurs */
+}
+
+.spotlights > section > .image {
+    /* Styles pour les images dans les sections de projecteurs */
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0; /* Pas de bordure arrondie */
+    display: block;
+    position: relative;
+    width: 30%; /* Largeur de l'image */
+}
+
+.spotlights > section > .image img {
+    /* Styles pour les images à l'intérieur de l'élément image */
+    border-radius: 0; /* Pas de bordure arrondie pour l'image */
+    display: block;
+    width: 100%; /* L'image prend toute la largeur */
+}
+.spotlights > section > .image:before {
+    /* Arrière-plan semi-transparent pour l'image */
+	background: rgba(36, 41, 67, 0.9);
+	content: '';
+	display: block; /* Affiche le pseudo-élément comme un bloc */
+	height: 100%; /* Prend toute la hauteur de la section */
+	left: 0; /* Positionne à gauche */
+	opacity: 0; /* Invisible par défaut */
+	position: absolute; /* Position absolue par rapport au parent */
+	top: 0; /* Positionne en haut */
+	width: 100%; /* Prend toute la largeur de la section */
+}
+
+.spotlights > section > .content {
+    /* Styles pour le contenu à l'intérieur de la section */
+	display: -moz-flex; /* Flexbox pour les anciens navigateurs Firefox */
+	display: -webkit-flex; /* Flexbox pour les anciens navigateurs Safari */
+	display: -ms-flex; /* Flexbox pour les anciens navigateurs IE */
+	display: flex; /* Utilise Flexbox */
+	-moz-flex-direction: column; /* Colonne pour les anciens navigateurs Firefox */
+	-webkit-flex-direction: column; /* Colonne pour les anciens navigateurs Safari */
+	-ms-flex-direction: column; /* Colonne pour les anciens navigateurs IE */
+	flex-direction: column; /* Colonne pour les navigateurs modernes */
+	-moz-justify-content: center; /* Centre le contenu verticalement pour Firefox */
+	-webkit-justify-content: center; /* Centre le contenu verticalement pour Safari */
+	-ms-justify-content: center; /* Centre le contenu verticalement pour IE */
+	justify-content: center; /* Centre le contenu verticalement */
+	-moz-align-items: center; /* Centre les éléments horizontalement pour Firefox */
+	-webkit-align-items: center; /* Centre les éléments horizontalement pour Safari */
+	-ms-align-items: center; /* Centre les éléments horizontalement pour IE */
+	align-items: center; /* Centre les éléments horizontalement */
+	padding: 2em 3em 0.1em 3em; /* Ajoute du padding */
+	width: 70%; /* Largeur du contenu */
+}
+
+.spotlights > section > .content > .inner {
+    /* Styles pour l'élément interne du contenu */
+	margin: 0 auto; /* Centre horizontalement */
+	max-width: 100%; /* Largeur maximale de 100% */
+	width: 65em; /* Largeur de l'élément interne */
+}
+
+.spotlights > section:nth-child(2n) {
+    /* Styles pour les sections paires */
+	-moz-flex-direction: row-reverse; /* Inverse l'ordre des colonnes pour Firefox */
+	-webkit-flex-direction: row-reverse; /* Inverse l'ordre des colonnes pour Safari */
+	-ms-flex-direction: row-reverse; /* Inverse l'ordre des colonnes pour IE */
+	flex-direction: row-reverse; /* Inverse l'ordre des colonnes pour les navigateurs modernes */
+	background-color: #333856; /* Couleur d'arrière-plan pour les sections paires */
+}
+
+.spotlights > section:nth-child(2n) > .content {
+    /* Aligne le contenu à droite pour les sections paires */
+	-moz-align-items: -moz-flex-end; /* Aligne à la fin pour Firefox */
+	-webkit-align-items: -webkit-flex-end; /* Aligne à la fin pour Safari */
+	-ms-align-items: -ms-flex-end; /* Aligne à la fin pour IE */
+	align-items: flex-end; /* Aligne à la fin pour les navigateurs modernes */
+}
+
+@media screen and (max-width: 1680px) {
+    /* Styles pour les écrans de 1680px et moins */
+	.spotlights > section > .image {
+		width: 40%; /* Largeur de l'image */
+	}
+
+	.spotlights > section > .content {
+		width: 60%; /* Largeur du contenu */
+	}
+}
+
+@media screen and (max-width: 1280px) {
+    /* Styles pour les écrans de 1280px et moins */
+	.spotlights > section > .image {
+		width: 45%; /* Largeur de l'image */
+	}
+
+	.spotlights > section > .content {
+		width: 55%; /* Largeur du contenu */
+	}
+}
+
+@media screen and (max-width: 980px) {
+    /* Styles pour les écrans de 980px et moins */
+	.spotlights > section {
+		display: block; /* Affiche les sections en bloc */
+	}
+
+	.spotlights > section > .image {
+		width: 100%; /* Largeur de l'image */
+	}
+
+	.spotlights > section > .content {
+		padding: 4em 3em 2em 3em; /* Padding pour le contenu */
+		width: 100%; /* Largeur du contenu */
+	}
+}
+
+@media screen and (max-width: 736px) {
+    /* Styles pour les écrans de 736px et moins */
+	.spotlights > section > .content {
+		padding: 3em 1.5em 1em 1.5em; /* Padding réduit pour le contenu */
+	}
+}
+
+/* en-tête */
+
+@-moz-keyframes reveal-header {
+	/* Animation pour révéler l'en-tête */
+	0% {
+		top: -4em; /* Position initiale hors écran */
+		opacity: 0; /* Invisible */
+	}
+
+	100% {
+		top: 0; /* Position finale à l'écran */
+		opacity: 1; /* Visible */
+	}
+}
+
+@-webkit-keyframes reveal-header {
+	/* Animation pour révéler l'en-tête */
+	0% {
+		top: -4em; /* Position initiale hors écran */
+		opacity: 0; /* Invisible */
+	}
+
+	100% {
+		top: 0; /* Position finale à l'écran */
+		opacity: 1; /* Visible */
+	}
+}
+/* Animation pour faire apparaître l'en-tête */
+@-ms-keyframes reveal-header {
+	0% {
+		top: -4em; /* Position initiale hors de l'écran */
+		opacity: 0; /* Invisible */
+	}
+
+	100% {
+		top: 0; /* Position finale */
+		opacity: 1; /* Visible */
+	}
+}
+
+/* Animation standard pour faire apparaître l'en-tête */
+@keyframes reveal-header {
+	0% {
+		top: -4em; /* Position initiale hors de l'écran */
+		opacity: 0; /* Invisible */
+	}
+
+	100% {
+		top: 0; /* Position finale */
+		opacity: 1; /* Visible */
+	}
+}
+
+/* Style de l'en-tête */
+#header {
+	display: -moz-flex; /* Support pour Firefox */
+	display: -webkit-flex; /* Support pour Safari */
+	display: -ms-flex; /* Support pour Internet Explorer */
+	display: flex; /* Modèle de boîte flexible */
+	background-color: #2a2f4a; /* Couleur de fond de l'en-tête */
+	box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15); /* Ombre portée */
+	cursor: default; /* Curseur par défaut */
+	font-weight: 600; /* Épaisseur de la police */
+	height: 3.25em; /* Hauteur de l'en-tête */
+	left: 0; /* Alignement à gauche */
+	letter-spacing: 0.25em; /* Espacement entre les lettres */
+	line-height: 3.25em; /* Hauteur de ligne */
+	margin: 0; /* Pas de marge */
+	position: fixed; /* Position fixe en haut de la page */
+	text-transform: uppercase; /* Mettre le texte en majuscules */
+	top: 0; /* Alignement en haut */
+	width: 100%; /* Largeur totale */
+	z-index: 10000; /* Couche supérieure pour le positionnement */
+}
+
+/* Style du logo dans l'en-tête */
+#header .logo {
+	border: 0; /* Pas de bordure */
+	display: inline-block; /* Affichage en ligne */
+	font-size: 0.8em; /* Taille de la police */
+	height: inherit; /* Hauteur héritée */
+	line-height: inherit; /* Hauteur de ligne héritée */
+	padding: 0 1.5em; /* Espacement à gauche et à droite */
+}
+
+/* Style pour le texte fort dans le logo */
+#header .logo strong {
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Firefox */
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Safari */
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition pour Internet Explorer */
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition standard */
+	background-color: #ffffff; /* Couleur de fond du logo */
+	color: #242943; /* Couleur du texte */
+	display: inline-block; /* Affichage en ligne */
+	line-height: 1.65em; /* Hauteur de ligne pour le texte */
+	margin-right: 0.325em; /* Marge à droite */
+	padding: 0 0.125em 0 0.375em; /* Espacement intérieur */
+}
+
+/* Changement de couleur lorsque le logo est survolé */
+#header .logo:hover strong {
+	background-color: #9bf1ff; /* Couleur de fond au survol */
+}
+
+/* Changement de couleur lorsque le logo est cliqué */
+#header .logo:active strong {
+	background-color: #53e3fb; /* Couleur de fond au clic */
+}
+
+/* Style de la navigation dans l'en-tête */
+#header nav {
+	display: -moz-flex; /* Support pour Firefox */
+	display: -webkit-flex; /* Support pour Safari */
+	display: -ms-flex; /* Support pour Internet Explorer */
+	display: flex; /* Modèle de boîte flexible */
+	-moz-justify-content: -moz-flex-end; /* Alignement à droite pour Firefox */
+	-webkit-justify-content: -webkit-flex-end; /* Alignement à droite pour Safari */
+	-ms-justify-content: -ms-flex-end; /* Alignement à droite pour Internet Explorer */
+	justify-content: flex-end; /* Alignement à droite */
+	-moz-flex-grow: 1; /* Croissance flexible pour Firefox */
+	-webkit-flex-grow: 1; /* Croissance flexible pour Safari */
+	-ms-flex-grow: 1; /* Croissance flexible pour Internet Explorer */
+	flex-grow: 1; /* Croissance flexible */
+	height: inherit; /* Hauteur héritée */
+	line-height: inherit; /* Hauteur de ligne héritée */
+}
+
+/* Style des liens dans la navigation */
+#header nav a {
+	border: 0; /* Pas de bordure */
+	display: block; /* Affichage en bloc */
+	font-size: 0.8em; /* Taille de la police */
+	height: inherit; /* Hauteur héritée */
+	line-height: inherit; /* Hauteur de ligne héritée */
+	padding: 0 0.75em; /* Espacement à gauche et à droite */
+	position: relative; /* Position relative */
+	vertical-align: middle; /* Alignement vertical */
+}
+
+/* Espacement spécifique pour le dernier lien */
+#header nav a:last-child {
+	padding-right: 1.5em; /* Espacement à droite */
+}
+
+/* Espacement spécifique pour le lien vers le menu */
+#header nav a[href="#menu"] {
+	padding-right: 3.325em !important; /* Espacement à droite avec priorité */
+}
+
+/* Icône du menu (hamburger) */
+#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E"); /* Image de fond pour l'icône */
+	background-position: center; /* Positionnement centré */
+	background-repeat: no-repeat; /* Pas de répétition */
+	background-size: 24px 32px; /* Taille de l'icône */
+	content: ''; /* Contenu vide */
+	display: block; /* Affichage en bloc */
+	height: 100%; /* Hauteur à 100% */
+	position: absolute; /* Positionnement absolu */
+	right: 1.5em; /* Alignement à droite */
+	top: 0; /* Alignement en haut */
+	vertical-align: middle; /* Alignement vertical */
+	width: 24px; /* Largeur de l'icône */
+}
+/* Styles pour le pseudo-élément :after des liens de menu dans l'en-tête */
+#header nav a[href="#menu"]:after {
+    /* Transition pour l'effet d'opacité */
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    
+    /* Image de fond pour le pseudo-élément */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+    
+    /* Initialisation de l'opacité */
+    opacity: 0;
+    z-index: 1; /* Z-index pour le positionnement */
+}
+
+/* Styles pour afficher le pseudo-élément au survol ou à l'activation */
+#header nav a[href="#menu"]:hover:after, #header nav a[href="#menu"]:active:after {
+    opacity: 1; /* Rend visible le pseudo-élément */
+}
+
+/* Ajustement du padding pour le dernier enfant du menu */
+#header nav a[href="#menu"]:last-child {
+    padding-right: 3.875em !important; /* Padding à droite pour le dernier lien */
+}
+
+/* Styles spécifiques pour le dernier lien du menu */
+#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+    right: 2em; /* Positionnement à droite des pseudo-éléments */
+}
+
+/* Animation pour révéler l'en-tête */
+#header.reveal {
+    -moz-animation: reveal-header 0.35s ease;
+    -webkit-animation: reveal-header 0.35s ease;
+    -ms-animation: reveal-header 0.35s ease;
+    animation: reveal-header 0.35s ease; /* Animation lors de l'apparition */
+}
+
+/* Styles pour l'en-tête avec classe alternative */
+#header.alt {
+    /* Transition d'opacité pour l'en-tête alternatif */
+    -moz-transition: opacity 2.5s ease;
+    -webkit-transition: opacity 2.5s ease;
+    -ms-transition: opacity 2.5s ease;
+    transition: opacity 2.5s ease;
+    
+    /* Délai pour la transition */
+    -moz-transition-delay: 0.75s;
+    -webkit-transition-delay: 0.75s;
+    -ms-transition-delay: 0.75s;
+    transition-delay: 0.75s;
+    
+    /* Suppression des animations */
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    animation: none;
+    
+    /* Styles de fond et d'ombre */
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute; /* Positionnement absolu */
+}
+
+/* Couleurs des logos pour différents styles d'en-tête */
+#header.alt.style1 .logo strong {
+    color: #6fc3df; /* Couleur pour le style 1 */
+}
+
+#header.alt.style2 .logo strong {
+    color: #8d82c4; /* Couleur pour le style 2 */
+}
+
+#header.alt.style3 .logo strong {
+    color: #ec8d81; /* Couleur pour le style 3 */
+}
+
+#header.alt.style4 .logo strong {
+    color: #e7b788; /* Couleur pour le style 4 */
+}
+
+#header.alt.style5 .logo strong {
+    color: #8ea9e8; /* Couleur pour le style 5 */
+}
+
+#header.alt.style6 .logo strong {
+    color: #87c5a4; /* Couleur pour le style 6 */
+}
+
+/* Opacité pour l'en-tête lorsqu'il est préchargé */
+body.is-preload #header.alt {
+    opacity: 0; /* Masque l'en-tête */
+}
+
+/* Media queries pour différentes largeurs d'écran */
+@media screen and (max-width: 1680px) {
+    /* Ajustement du padding pour les liens du menu */
+    #header nav a[href="#menu"] {
+        padding-right: 3.75em !important; /* Padding pour les liens */
+    }
+
+    #header nav a[href="#menu"]:last-child {
+        padding-right: 4.25em !important; /* Padding pour le dernier lien */
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    /* Ajustement du padding pour les liens du menu */
+    #header nav a[href="#menu"] {
+        padding-right: 4em !important; /* Padding pour les liens */
+    }
+
+    #header nav a[href="#menu"]:last-child {
+        padding-right: 4.5em !important; /* Padding pour le dernier lien */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    /* Réglage de la hauteur et du line-height de l'en-tête */
+    #header {
+        height: 2.75em; /* Hauteur de l'en-tête */
+        line-height: 2.75em; /* Alignement vertical du texte */
+    }
+
+    /* Styles pour le logo dans l'en-tête */
+    #header .logo {
+        padding: 0 1em; /* Padding pour le logo */
+    }
+
+    /* Styles pour les liens dans l'en-tête */
+    #header nav a {
+        padding: 0 0.5em; /* Padding pour les liens */
+    }
+
+    #header nav a:last-child {
+        padding-right: 1em; /* Padding pour le dernier lien */
+    }
+
+    #header nav a[href="#menu"] {
+        padding-right: 3.25em !important; /* Padding pour le lien menu */
+    }
+
+    /* Positionnement des pseudo-éléments pour les liens du menu */
+    #header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+        right: 0.75em; /* Positionnement à droite */
+    }
+
+    #header nav a[href="#menu"]:last-child {
+        padding-right: 4em !important; /* Padding pour le dernier lien */
+    }
+
+    /* Positionnement des pseudo-éléments pour le dernier lien du menu */
+    #header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+        right: 1.5em; /* Positionnement à droite */
+    }
+}
+@media screen and (max-width: 480px) {
+    /* Cacher le texte du logo sur les petits écrans */
+	#header .logo span {
+		display: none;
+	}
+
+    /* Styles pour le lien du menu sur les petits écrans */
+	#header nav a[href="#menu"] {
+		overflow: hidden; /* Empêcher le débordement */
+		padding-right: 0 !important; /* Supprimer le remplissage à droite */
+		text-indent: 5em; /* Indenter le texte */
+		white-space: nowrap; /* Ne pas autoriser le retour à la ligne */
+		width: 5em; /* Largeur du lien */
+	}
+
+    /* Styles pour les pseudo-éléments avant et après le lien du menu */
+	#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+		right: 0; /* Alignement à droite */
+		width: inherit; /* Largeur héritée */
+	}
+
+    /* Ajuster la largeur des pseudo-éléments pour le dernier enfant */
+	#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+		width: 4em; /* Largeur spécifique */
+		right: 0; /* Alignement à droite */
+	}
+}
+
+/* Banner */
+#banner {
+	/* Aligner les éléments au centre */
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	background-image: url("../../images/banner.jpg"); /* Image de fond */
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex; /* Utilisation du modèle flex */
+	padding: 6em 0 2em 0; /* Remplissage vertical */
+	background-attachment: fixed; /* Fixer l'image de fond */
+	background-position: center; /* Centrer l'image */
+	background-repeat: no-repeat; /* Ne pas répéter l'image */
+	background-size: cover; /* Couvrir tout l'espace */
+	border-bottom: 0 !important; /* Supprimer la bordure inférieure */
+	cursor: default; /* Curseur par défaut */
+	height: 60vh; /* Hauteur de 60% de la fenêtre */
+	margin-bottom: -3.25em; /* Marge inférieure négative */
+	max-height: 32em; /* Hauteur maximale */
+	min-height: 22em; /* Hauteur minimale */
+	position: relative; /* Position relative pour les éléments enfants */
+	top: -3.25em; /* Déplacement vers le haut */
+}
+
+#banner:after {
+	/* Effets de transition pour l'overlay */
+	-moz-transition: opacity 2.5s ease;
+	-webkit-transition: opacity 2.5s ease;
+	-ms-transition: opacity 2.5s ease;
+	transition: opacity 2.5s ease; /* Transition d'opacité */
+	-moz-transition-delay: 0.75s; /* Délai avant la transition */
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s; /* Délai avant la transition */
+	pointer-events: none; /* Désactiver les événements de pointeur */
+	background-color: #242943; /* Couleur de fond de l'overlay */
+	content: ''; /* Contenu vide */
+	display: block; /* Afficher comme un bloc */
+	height: 100%; /* Hauteur complète */
+	left: 0; /* Position à gauche */
+	opacity: 0.85; /* Opacité de l'overlay */
+	position: absolute; /* Position absolue par rapport au parent */
+	top: 0; /* Position en haut */
+	width: 100%; /* Largeur complète */
+	z-index: 1; /* Positionner derrière le contenu */
+}
+
+#banner h1 {
+	font-size: 3.25em; /* Taille de police pour le titre */
+}
+
+#banner > .inner {
+	/* Effets de transition pour l'intérieur du banner */
+	-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+	transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease; /* Transition d'opacité et de transformation */
+	padding: 0 !important; /* Supprimer le remplissage */
+	position: relative; /* Position relative pour le contenu */
+	z-index: 2; /* Positionner au-dessus de l'overlay */
+}
+
+#banner > .inner .image {
+	display: none; /* Cacher l'image dans le banner */
+}
+
+#banner > .inner header {
+	width: auto; /* Largeur automatique pour l'en-tête */
+}
+
+#banner > .inner header > :first-child {
+	width: auto; /* Largeur automatique pour le premier enfant */
+}
+
+#banner > .inner header > :first-child:after {
+	max-width: 100%; /* Largeur maximale de 100% */
+}
+
+#banner > .inner .content {
+	/* Alignement des éléments de contenu */
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex; /* Utilisation du modèle flex */
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center; /* Alignement au centre */
+	margin: 0 0 2em 0; /* Marge inférieure */
+}
+
+#banner > .inner .content > * {
+	margin-right: 1.5em; /* Marge à droite pour les enfants */
+	margin-bottom: 0; /* Pas de marge inférieure */
+}
+
+#banner > .inner .content > :last-child {
+	margin-right: 0; /* Pas de marge à droite pour le dernier enfant */
+}
+
+#banner > .inner .content p {
+	font-size: 0.7em; /* Taille de police pour les paragraphes */
+	font-weight: 600; /* Épaisseur de police */
+	letter-spacing: 0.25em; /* Espacement entre les lettres */
+	text-transform: uppercase; /* Texte en majuscules */
+}
+
+#banner.major {
+	height: 75vh; /* Hauteur pour le banner majeur */
+	min-height: 30em; /* Hauteur minimale pour le banner majeur */
+	max-height: 50em; /* Hauteur maximale pour le banner majeur */
+}
+
+#banner.major.alt {
+	opacity: 0.75; /* Opacité pour le banner majeur alternatif */
+}
+
+#banner.style1:after {
+	background-color: #6fc3df; /* Couleur d'overlay pour le style 1 */
+}
+
+#banner.style2:after {
+	background-color: #8d82c4; /* Couleur d'overlay pour le style 2 */
+}
+
+#banner.style3:after {
+	background-color: #ec8d81; /* Couleur d'overlay pour le style 3 */
+}
+
+#banner.style4:after {
+	background-color: #e7b788; /* Couleur d'overlay pour le style 4 */
+}
+
+#banner.style5:after {
+	background-color: #8ea9e8; /* Couleur d'overlay pour le style 5 */
+}
+
+#banner.style6:after {
+	background-color: #87c5a4; /* Couleur d'overlay pour le style 6 */
+}
+
+body.is-preload #banner:after {
+	opacity: 1.0; /* Opacité maximale lorsque le corps est en préchargement */
+}
+
+body.is-preload #banner > .inner {
+	/* Effets pour le contenu du banner en préchargement */
+	-moz-filter: blur(0.125em); /* Flou pour les anciens navigateurs */
+	-webkit-filter: blur(0.125em); /* Flou pour les navigateurs WebKit */
+	-ms-filter: blur(0.125em); /* Flou pour les anciens navigateurs Microsoft */
+	filter: blur(0.125em); /* Flou */
+	-moz-transform: translateX(-0.5em); /* Déplacement vers la gauche */
+	-webkit-transform: translateX(-0.5em); /* Déplacement vers la gauche */
+	-ms-transform: translateX(-0.5em); /* Déplacement vers la gauche */
+	transform: translateX(-0.5em); /* Déplacement vers la gauche */
+	opacity: 0; /* Opacité à zéro */
+}
+/* Styles pour les écrans avec une largeur maximale de 1280px */
+@media screen and (max-width: 1280px) {
+    #banner {
+        background-attachment: scroll; /* Défilement de l'arrière-plan */
+    }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 736px */
+@media screen and (max-width: 736px) {
+    #banner {
+        padding: 5em 0 1em 0; /* Ajout de padding en haut et en bas */
+        height: auto; /* Hauteur automatique */
+        margin-bottom: -2.75em; /* Marge inférieure négative */
+        max-height: none; /* Pas de hauteur maximale */
+        min-height: 0; /* Pas de hauteur minimale */
+        top: -2.75em; /* Positionnement vers le haut */
+    }
+
+    #banner h1 {
+        font-size: 2em; /* Taille de police pour le titre */
+    }
+
+    #banner > .inner .content {
+        display: block; /* Afficher le contenu sous forme de bloc */
+    }
+
+    #banner > .inner .content > * {
+        margin-right: 0; /* Pas de marge à droite */
+        margin-bottom: 2em; /* Marge inférieure de 2em */
+    }
+
+    #banner.major {
+        height: auto; /* Hauteur automatique pour le banner majeur */
+        min-height: 0; /* Pas de hauteur minimale */
+        max-height: none; /* Pas de hauteur maximale */
+    }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 480px */
+@media screen and (max-width: 480px) {
+    #banner {
+        padding: 6em 0 2em 0; /* Ajout de padding */
+    }
+
+    #banner > .inner .content p br {
+        display: none; /* Ne pas afficher les sauts de ligne */
+    }
+
+    #banner.major {
+        padding: 8em 0 4em 0; /* Ajout de padding spécifique pour le banner majeur */
+    }
+}
+
+/* Main */
+
+#main {
+    background-color: #2a2f4a; /* Couleur de fond du main */
+    margin-top: 100px; /* Marge supérieure */
+}
+
+#main > * {
+    border-top: solid 1px rgba(212, 212, 255, 0.1); /* Bordure supérieure pour les enfants */
+}
+
+#main > *:first-child {
+    border-top: 0; /* Pas de bordure supérieure pour le premier enfant */
+}
+
+#main > * > .inner {
+    padding: 4em 0 2em 0; /* Padding intérieur */
+    margin: 0 auto; /* Centrer le contenu */
+    max-width: 65em; /* Largeur maximale */
+    width: calc(100% - 6em); /* Largeur ajustée */
+}
+
+@media screen and (max-width: 736px) {
+    #main > * > .inner {
+        padding: 3em 0 1em 0; /* Padding réduit pour les petits écrans */
+        width: calc(100% - 3em); /* Largeur ajustée */
+    }
+}
+
+#main.alt {
+    background-color: transparent; /* Fond transparent pour les sections alternées */
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1); /* Bordure inférieure */
+}
+
+.photoheader {
+    margin-top: 3000000px; /* Marge supérieure extrêmement élevée (peut-être une erreur) */
+}
+
+/* Contacte */
+
+#contact {
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1); /* Bordure inférieure */
+    overflow-x: hidden; /* Masquer le débordement horizontal */
+}
+
+#contact > .inner {
+    display: -moz-flex; /* Affichage flexible pour Firefox */
+    display: -webkit-flex; /* Affichage flexible pour Safari */
+    display: -ms-flex; /* Affichage flexible pour IE */
+    display: flex; /* Affichage flexible standard */
+    padding: 0 !important; /* Suppression du padding */
+}
+
+#contact > .inner > :nth-child(2n - 1) {
+    padding: 4em 3em 2em 0; /* Padding pour les enfants impairs */
+    border-right: solid 1px rgba(212, 212, 255, 0.1); /* Bordure droite */
+    width: 60%; /* Largeur de 60% */
+}
+
+#contact > .inner > :nth-child(2n) {
+    padding-left: 3em; /* Padding à gauche pour les enfants pairs */
+    width: 40%; /* Largeur de 40% */
+}
+
+#contact > .inner > .split {
+    padding: 0; /* Pas de padding pour les éléments divisés */
+}
+
+#contact > .inner > .split > * {
+    padding: 3em 0 1em 3em; /* Padding pour les éléments dans un split */
+    position: relative; /* Positionnement relatif */
+}
+
+#contact > .inner > .split > *:before {
+    border-top: solid 1px rgba(212, 212, 255, 0.1); /* Bordure supérieure pour les éléments avant */
+    content: ''; /* Contenu vide pour la bordure */
+    display: block; /* Affichage en bloc */
+    margin-left: -3em; /* Décalage à gauche */
+    position: absolute; /* Positionnement absolu */
+    top: 0; /* Positionner en haut */
+    width: calc(100vw + 3em); /* Largeur ajustée */
+}
+
+#contact > .inner > .split > :first-child:before {
+    display: none; /* Ne pas afficher la bordure pour le premier enfant */
+}
+@media screen and (max-width: 980px) {
+    /* Styles pour les écrans de moins de 980 pixels de large */
+
+    #contact > .inner {
+        display: block; /* Affiche les éléments internes en bloc */
+    }
+
+    #contact > .inner > :nth-child(2n - 1) {
+        padding: 4em 0 2em 0; /* Ajoute du padding pour les éléments impairs */
+        border-right: 0; /* Supprime la bordure droite */
+        width: 100%; /* Définit la largeur à 100% */
+    }
+
+    #contact > .inner > :nth-child(2n) {
+        padding-left: 0; /* Supprime le padding à gauche pour les éléments pairs */
+        width: 100%; /* Définit la largeur à 100% */
+    }
+
+    #contact > .inner > .split > * {
+        padding: 3em 0 1em 0; /* Ajoute du padding pour tous les enfants de .split */
+    }
+
+    #contact > .inner > .split > :first-child:before {
+        display: block; /* Affiche un élément avant le premier enfant */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    /* Styles pour les écrans de moins de 736 pixels de large */
+
+    #contact > .inner > :nth-child(2n - 1) {
+        padding: 3em 0 1em 0; /* Modifie le padding pour les éléments impairs */
+    }
+}
+
+/* Pied de page */
+#footer .copyright {
+    font-size: 0.8em; /* Taille de police pour le copyright */
+    list-style: none; /* Supprime les puces de la liste */
+    padding-left: 0; /* Supprime le padding à gauche */
+}
+
+#footer .copyright li {
+    border-left: solid 1px rgba(212, 212, 255, 0.1); /* Bordure à gauche pour les éléments de la liste */
+    color: rgba(244, 244, 255, 0.2); /* Couleur du texte pour les éléments de la liste */
+    display: inline-block; /* Affiche les éléments en ligne */
+    line-height: 1; /* Hauteur de ligne */
+    margin-left: 1em; /* Marge à gauche */
+    padding-left: 1em; /* Padding à gauche */
+}
+
+#footer .copyright li:first-child {
+    border-left: 0; /* Supprime la bordure gauche pour le premier élément */
+    margin-left: 0; /* Supprime la marge à gauche pour le premier élément */
+    padding-left: 0; /* Supprime le padding à gauche pour le premier élément */
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles pour les écrans de moins de 480 pixels de large */
+
+    #footer .copyright li {
+        display: block; /* Affiche les éléments de la liste en bloc */
+        border-left: 0; /* Supprime la bordure gauche */
+        margin-left: 0; /* Supprime la marge à gauche */
+        padding-left: 0; /* Supprime le padding à gauche */
+        line-height: inherit; /* Hérite de la hauteur de ligne */
+    }
+}
+
+/* Conteneur */
+#wrapper {
+    /* Transition pour le wrapper */
+    -moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
+    -webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
+    -ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease-out;
+    transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
+    padding-top: 3.25em; /* Ajoute un padding en haut */
+}
+
+#wrapper.is-transitioning {
+    opacity: 0; /* Rend le wrapper transparent lors de la transition */
+}
+
+#wrapper > * > .inner {
+    padding: 4em 0 2em 0; /* Ajoute du padding aux éléments internes */
+    margin: 0 auto; /* Centre les éléments */
+    max-width: 65em; /* Largeur maximale */
+    width: calc(100% - 6em); /* Largeur calculée en fonction de la marge */
+}
+
+@media screen and (max-width: 736px) {
+    /* Styles pour les écrans de moins de 736 pixels de large */
+
+    #wrapper > * > .inner {
+        padding: 3em 0 1em 0; /* Modifie le padding */
+        width: calc(100% - 3em); /* Ajuste la largeur */
+    }
+}
+/* Styles pour les écrans de petite taille (mobile) */
+@media screen and (max-width: 736px) {
+    /* Ajoute un padding supérieur au wrapper sur les petits écrans */
+    #wrapper {
+        padding-top: 2.75em;
+    }
+}
+
+/* Menu principal */
+
+/* Styles pour le menu */
+#menu {
+    /* Transitions pour les effets d'apparence */
+    -moz-transition: -moz-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+    -webkit-transition: -webkit-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+    -ms-transition: -ms-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+    transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+    
+    /* Alignement et affichage */
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    /* Justification et style */
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    pointer-events: none; /* Empêche les événements souris */
+    background: rgba(36, 41, 67, 0.9); /* Fond semi-transparent */
+    box-shadow: none;
+    height: 100%; /* Prend toute la hauteur */
+    left: 0;
+    opacity: 0; /* Caché par défaut */
+    overflow: hidden; /* Cacher le contenu débordant */
+    padding: 3em 2em; /* Espacement intérieur */
+    position: fixed; /* Fixé à la fenêtre */
+    top: 0;
+    visibility: hidden; /* Caché par défaut */
+    width: 100%; /* Prend toute la largeur */
+    z-index: 10002; /* Au-dessus des autres éléments */
+}
+
+/* Styles pour l'intérieur du menu */
+#menu .inner {
+    /* Transitions pour les effets d'apparence */
+    -moz-transition: -moz-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+    -webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+    -ms-transition: -ms-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+    transition: transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
+    
+    /* Transformation et style */
+    -moz-transform: rotateX(20deg);
+    -webkit-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%; /* Largeur maximale */
+    max-height: 100vh; /* Hauteur maximale */
+    opacity: 0; /* Caché par défaut */
+    overflow: auto; /* Défilement si débordement */
+    text-align: center; /* Centrer le texte */
+    visibility: hidden; /* Caché par défaut */
+    width: 18em; /* Largeur fixe */
+}
+
+/* Marges pour le premier et dernier enfant de l'intérieur du menu */
+#menu .inner > :first-child {
+    margin-top: 2em; /* Marge supérieure pour le premier élément */
+}
+
+#menu .inner > :last-child {
+    margin-bottom: 3em; /* Marge inférieure pour le dernier élément */
+}
+
+/* Styles pour la liste dans le menu */
+#menu ul {
+    margin: 0 0 1em 0; /* Marges pour la liste */
+}
+
+/* Styles pour les liens dans le menu */
+#menu ul.links {
+    list-style: none; /* Pas de puces */
+    padding: 0; /* Pas de padding */
+}
+
+#menu ul.links > li {
+    padding: 0; /* Pas de padding pour les éléments de la liste */
+}
+
+#menu ul.links > li > a:not(.button) {
+    border: 0; /* Pas de bordure */
+    border-top: solid 1px rgba(212, 212, 255, 0.1); /* Bordure supérieure pour séparer les éléments */
+    display: block; /* Affichage en bloc */
+    font-size: 0.8em; /* Taille de police */
+    font-weight: 600; /* Épaisseur de la police */
+    letter-spacing: 0.25em; /* Espacement entre les lettres */
+    line-height: 4em; /* Hauteur de ligne */
+    text-decoration: none; /* Pas de soulignement */
+    text-transform: uppercase; /* Mettre en majuscules */
+}
+
+/* Styles pour les boutons dans le menu */
+#menu ul.links > li > .button {
+    display: block; /* Affichage en bloc */
+    margin: 0.5em 0 0 0; /* Marges pour les boutons */
+}
+
+/* Suppression de la bordure pour le premier lien */
+#menu ul.links > li:first-child > a:not(.button) {
+    border-top: 0 !important; /* Pas de bordure pour le premier élément */
+}
+
+/* Styles pour le bouton de fermeture du menu */
+#menu .close {
+    /* Transition pour la couleur */
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Désactiver le surlignage sur les appareils tactiles */
+    border: 0; /* Pas de bordure */
+    cursor: pointer; /* Curseur pointer pour le clic */
+    display: block; /* Affichage en bloc */
+    height: 4em; /* Hauteur du bouton */
+    line-height: 4em; /* Aligner le texte verticalement */
+    overflow: hidden; /* Cacher le débordement */
+    padding-right: 1.25em; /* Espacement à droite */
+    position: absolute; /* Positionnement absolu */
+    right: 0; /* À droite */
+    text-align: right; /* Aligner le texte à droite */
+    text-indent: 8em; /* Indentation du texte */
+    top: 0; /* En haut */
+    vertical-align: middle; /* Alignement vertical */
+    white-space: nowrap; /* Pas de retour à la ligne */
+    width: 8em; /* Largeur fixe */
+}
+
+/* Styles pour les pseudo-éléments du bouton de fermeture */
+#menu .close:before, #menu .close:after {
+    /* Transitions pour l'opacité */
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    background-position: center; /* Centrer l'image de fond */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    content: ''; /* Contenu vide pour les pseudo-éléments */
+    display: block; /* Affichage en bloc */
+    height: 4em; /* Hauteur des éléments */
+    position: absolute; /* Positionnement absolu */
+    right: 0; /* À droite */
+    top: 0; /* En haut */
+    width: 4em; /* Largeur des éléments */
+}
+
+/* Image pour le pseudo-élément avant du bouton de fermeture */
+#menu .close:before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
+}
+
+/* Image pour le pseudo-élément après du bouton de fermeture */
+#menu .close:after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %239bf1ff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
+}
+
+/* Styles pour le menu en position active (visible) */
+#menu.active {
+    pointer-events: auto; /* Autorise les événements souris */
+    opacity: 1; /* Visible */
+    visibility: visible; /* Visibilité */
+}
+
+/* Styles pour l'intérieur du menu actif */
+#menu.active .inner {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Visibilité */
+    -moz-transform: rotateX(0deg); /* Annule la rotation */
+    -webkit-transform: rotateX(0deg); /* Annule la rotation */
+    -ms-transform: rotateX(0deg); /* Annule la rotation */
+    transform: rotateX(0deg); /* Annule la rotation */
+}
+
+/* Styles pour le contenu principal */
+#main {
+    /* Transition pour les effets d'apparence */
+    -moz-transition: opacity 0.35s ease, visibility 0.35s ease;
+    -webkit-transition: opacity 0.35s ease, visibility 0.35s ease;
+    -ms-transition: opacity 0.35s ease, visibility 0.35s ease;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+    opacity: 1; /* Visible par défaut */
+    visibility: visible; /* Visibilité */
+}
+
+/* Styles pour le contenu principal lorsque le menu est actif */
+#menu.active ~ #main {
+    opacity: 0; /* Caché */
+    visibility: hidden; /* Caché */
+}
